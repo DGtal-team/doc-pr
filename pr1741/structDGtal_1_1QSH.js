@@ -1,0 +1,28 @@
+var structDGtal_1_1QSH =
+[
+    [ "QSH", "structDGtal_1_1QSH.html#aa17bd4dd39f7da14ce5c80b316c58137", null ],
+    [ "angle", "structDGtal_1_1QSH.html#a1263108f265dc3c86eb5c9e14926c09e", null ],
+    [ "BOOST_CONCEPT_ASSERT", "structDGtal_1_1QSH.html#aa734c519eb365cd1b7b4840462fbcb10", null ],
+    [ "BOOST_STATIC_ASSERT", "structDGtal_1_1QSH.html#add11581495fdac3c307ba898ef037dae", null ],
+    [ "BOOST_STATIC_ASSERT", "structDGtal_1_1QSH.html#acd442da2664a8a4e366f8ff03e0ec563", null ],
+    [ "BOOST_STATIC_ASSERT", "structDGtal_1_1QSH.html#a8b3a78686bacb58609a3f6560fdafb9e", null ],
+    [ "center", "structDGtal_1_1QSH.html#a8470fa695adaf54a020916abf0aa02af", null ],
+    [ "center", "structDGtal_1_1QSH.html#a352f49ff36affb0720381a64e9e3c1d3", null ],
+    [ "hqs", "structDGtal_1_1QSH.html#a38bddb3302090962fad19a43a6a3d8e8", null ],
+    [ "hqs_p", "structDGtal_1_1QSH.html#aa0106c829a19b4759368a265b05fb6a1", null ],
+    [ "initQSHRotation", "structDGtal_1_1QSH.html#a99722c12ff08329053c5433a91845d50", null ],
+    [ "operator()", "structDGtal_1_1QSH.html#a015431dc0dba4bff79c8cc7ea5185e67", null ],
+    [ "rotate", "structDGtal_1_1QSH.html#a40b05787af3f3f51f6368315be5f0909", null ],
+    [ "rotateImage", "structDGtal_1_1QSH.html#abe0c9301c5d6ef14c1d69502e9f9bd31", null ],
+    [ "rotateImage", "structDGtal_1_1QSH.html#a2c92f15000e3b11b8898a2f14e47a15a", null ],
+    [ "set_angle", "structDGtal_1_1QSH.html#ac7eefbb6c19ec7021d5aefd44a3df5f0", null ],
+    [ "tostring", "structDGtal_1_1QSH.html#a55e69ba0c578796313a22dd6183538d7", null ],
+    [ "vqs", "structDGtal_1_1QSH.html#aa9f7bff99ffd7e8cfd9ad7a0714ab8f9", null ],
+    [ "vqs_p", "structDGtal_1_1QSH.html#a529da8b6332972aeb7eac77b617f8396", null ],
+    [ "a", "structDGtal_1_1QSH.html#ad4fd5ac67f1a0f4408c47f9bb836cb44", null ],
+    [ "aprime", "structDGtal_1_1QSH.html#ac2e5b0149f1b10032d1f30eb04b9a8a4", null ],
+    [ "bprime", "structDGtal_1_1QSH.html#aaf055b014108c31957ddcf7599961557", null ],
+    [ "my_angle", "structDGtal_1_1QSH.html#a3e827d2ea29eb623f996dcc1c0e0968a", null ],
+    [ "my_center", "structDGtal_1_1QSH.html#a455dad74711b797f54c5fe52df823ab7", null ],
+    [ "omega", "structDGtal_1_1QSH.html#a455a09327e22d8886a132ae55f1cf5bd", null ]
+];

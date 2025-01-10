@@ -1,0 +1,12 @@
+<map id="DGtal::concepts::CImage&lt; I &gt;" name="DGtal::concepts::CImage&lt; I &gt;">
+<area shape="rect" id="node1" title="Aim: Defines the concept describing a read/write image, having an output iterator." alt="" coords="144,712,361,739"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CConstImage.html" title="Aim: Defines the concept describing a read&#45;only image, which is a refinement of CPointFunctor." alt="" coords="5,629,260,655"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CTrivialConstImage.html" title="Aim: Defines the concept describing a read&#45;only image, which is a refinement of CPointFunctor." alt="" coords="162,531,343,572"/>
+<area shape="rect" id="node10" href="$structDGtal_1_1concepts_1_1CTrivialImage.html" title="Aim: Defines the concept describing an image without extra ranges, which is a refinement of CTrivialC..." alt="" coords="285,621,466,663"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CPointFunctor.html" title=" " alt="" coords="124,455,381,481"/>
+<area shape="rect" id="node5" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title="Aim: Defines a unary functor, which associates arguments to results." alt="" coords="161,171,390,212"/>
+<area shape="rect" id="node9" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title=" " alt="" coords="285,275,514,316"/>
+<area shape="rect" id="node6" href="$structboost_1_1Assignable.html" title=" " alt="" coords="226,95,402,121"/>
+<area shape="rect" id="node7" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="303,5,477,32"/>
+<area shape="rect" id="node8" href="$structDGtal_1_1concepts_1_1CPointFunctor.html" title="Aim: Defines a functor on points." alt="" coords="269,365,530,392"/>
+</map>

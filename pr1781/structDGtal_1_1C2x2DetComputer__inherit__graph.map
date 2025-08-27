@@ -1,0 +1,9 @@
+<map id="DGtal::C2x2DetComputer&lt; T &gt;" name="DGtal::C2x2DetComputer&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Aim: This concept gathers all models that are able to compute the (sign of the) determinant of a 2x2 ..." alt="" coords="292,55,517,80"/>
+<area shape="rect" id="Node000002" href="$structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html." alt="" coords="5,5,244,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,30,332,52,331,57,210,36"/>
+<area shape="rect" id="Node000003" href="$structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html." alt="" coords="13,55,236,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="249,65,292,65,292,70,249,70"/>
+<area shape="rect" id="Node000004" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="37,104,212,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="210,99,331,77,332,83,211,104"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="DGtal::concepts::CAdjacency&lt; Adj &gt;" name="DGtal::concepts::CAdjacency&lt; Adj &gt;">
+<area shape="rect" id="Node000001" title="Aim: The concept CAdjacency defines an elementary adjacency relation between points of a digital spac..." alt="" coords="24,197,233,237"/>
+<area shape="rect" id="Node000004" href="$structDGtal_1_1concepts_1_1CAdjacency.html" title=" " alt="" coords="5,300,252,325"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="131,251,131,300,126,300,126,251"/>
+<area shape="rect" id="Node000002" href="$structDGtal_1_1concepts_1_1CUndirectedSimpleLocalGraph.html" title=" " alt="" coords="22,108,235,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,162,131,197,126,197,126,162"/>
+<area shape="rect" id="Node000003" href="$structDGtal_1_1concepts_1_1CUndirectedSimpleLocalGraph.html" title="Aim: Represents the concept of local graph: each vertex has neighboring vertices, but we do not neces..." alt="" coords="22,5,235,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,59,131,108,126,108,126,59"/>
+<area shape="rect" id="Node000005" href="$structDGtal_1_1concepts_1_1CDomainAdjacency.html" title="Aim: Refines the concept CAdjacency by telling that the adjacency is specific to a given domain of th..." alt="" coords="32,375,225,415"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="131,339,131,375,126,375,126,339"/>
+</map>

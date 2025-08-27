@@ -1,0 +1,11 @@
+<map id="DGtal::CameraZNearFar" name="DGtal::CameraZNearFar">
+<area shape="rect" id="Node000001" title="CameraZNearFar class to set near and far distance." alt="" coords="161,167,338,192"/>
+<area shape="rect" id="Node000002" href="$structDGtal_1_1DrawWithBoard3DTo2DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream." alt="" coords="17,79,226,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,124,232,164,229,169,162,128"/>
+<area shape="rect" id="Node000003" href="$structDGtal_1_1DrawableWithDisplay3D.html" title=" " alt="" coords="5,5,232,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="122,44,123,78,118,79,117,45"/>
+<area shape="rect" id="Node000004" href="$structDGtal_1_1DrawWithViewer3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream." alt="" coords="255,86,502,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="349,121,270,169,267,164,347,116"/>
+<area shape="rect" id="Node000005" href="$structDGtal_1_1DrawWithDisplay3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream." alt="" coords="256,5,507,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="383,45,382,86,376,86,378,44"/>
+</map>

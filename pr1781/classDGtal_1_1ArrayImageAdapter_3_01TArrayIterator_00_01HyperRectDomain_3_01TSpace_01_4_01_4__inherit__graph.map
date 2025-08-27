@@ -1,0 +1,7 @@
+<map id="DGtal::ArrayImageAdapter&lt; TArrayIterator, HyperRectDomain&lt; TSpace &gt; &gt;" name="DGtal::ArrayImageAdapter&lt; TArrayIterator, HyperRectDomain&lt; TSpace &gt; &gt;">
+<area shape="rect" id="Node000001" title="Aim: Image adapter for generic arrays with sub&#45;domain view capability." alt="" coords="748,22,1003,77"/>
+<area shape="rect" id="Node000002" href="$classDGtal_1_1IteratorCompletion.html" title=" " alt="" coords="425,22,699,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="712,47,748,47,748,52,712,52"/>
+<area shape="rect" id="Node000003" href="$classDGtal_1_1IteratorCompletion.html" title="Aim: Class that uses CRTP to add reverse iterators and ranges to a derived class." alt="" coords="5,29,196,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="210,47,425,47,425,52,210,52"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="DGtal::DiscreteExteriorCalculusSolver&lt; TCalculus, TLinearAlgebraSolver, order_in, duality_in, order_out, duality_out &gt;" name="DGtal::DiscreteExteriorCalculusSolver&lt; TCalculus, TLinearAlgebraSolver, order_in, duality_in, order_out, duality_out &gt;">
+<area shape="rect" id="Node000001" title="Aim: This wraps a linear algebra solver around a discrete exterior calculus." alt="" coords="5,77,296,146"/>
+<area shape="rect" id="Node000002" href="$classDGtal_1_1DiscreteExteriorCalculusSolver.html" title=" " alt="" coords="547,5,823,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="309,76,320,74,546,44,547,49,320,79,310,81"/>
+<area shape="rect" id="Node000003" href="$classDGtal_1_1DiscreteExteriorCalculusSolver.html" title=" " alt="" coords="547,84,823,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="310,109,546,109,546,114,310,114"/>
+<area shape="rect" id="Node000004" href="$classDGtal_1_1DiscreteExteriorCalculusSolver.html" title=" " alt="" coords="547,163,823,217"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="310,142,320,143,547,174,546,179,320,149,309,147"/>
+</map>

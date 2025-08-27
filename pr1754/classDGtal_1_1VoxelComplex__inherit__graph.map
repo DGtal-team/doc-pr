@@ -1,0 +1,9 @@
+<map id="DGtal::VoxelComplex&lt; TKSpace, TCellContainer &gt;" name="DGtal::VoxelComplex&lt; TKSpace, TCellContainer &gt;">
+<area shape="rect" id="Node000001" title="This class represents a voxel complex living in some Khalimsky space. Voxel complexes are derived fro..." alt="" coords="77,95,288,135"/>
+<area shape="rect" id="Node000003" href="$classDGtal_1_1VoxelComplex.html" title=" " alt="" coords="5,197,165,237"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,147,105,199,102,195,153,143"/>
+<area shape="rect" id="Node000004" href="$classDGtal_1_1VoxelComplex.html" title=" " alt="" coords="189,197,371,237"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="215,142,230,157,265,195,262,199,226,161,211,146"/>
+<area shape="rect" id="Node000002" href="$classDGtal_1_1CubicalComplex.html" title="Aim: This class represents an arbitrary cubical complex living in some Khalimsky space...." alt="" coords="77,5,288,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,59,185,95,180,95,180,59"/>
+</map>

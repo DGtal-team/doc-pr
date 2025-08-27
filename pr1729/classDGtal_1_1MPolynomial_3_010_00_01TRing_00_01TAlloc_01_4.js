@@ -1,0 +1,27 @@
+var classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4 =
+[
+    [ "Alloc", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#a7fdd2f71d571c0d1d37b6aad657cfeb7", null ],
+    [ "Ring", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#a5158471ab08c0f35ec99c8e2f9bd6c73", null ],
+    [ "MPolynomial", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#a12c689acf27488533537550fa28d045c", null ],
+    [ "MPolynomial", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#a0855789f88992713d514d31a83a10bf7", null ],
+    [ "getAllocator", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#a52171b763a404a3cc4246783108ec5f1", null ],
+    [ "isZero", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#a00f11d3e4833b8db86d38b26d56f3f67", null ],
+    [ "operator const Ring &", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#aa9f6fcba82c417f9a235012ed59d8ba4", null ],
+    [ "operator!=", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#a225b7befee5a1f524fec669bf156f2ba", null ],
+    [ "operator()", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#adcb1131fd03527c74b1b42671a3ceb8f", null ],
+    [ "operator*", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#aa5d35d3ab179812fdd5d356c430fdfea", null ],
+    [ "operator*=", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#adcbad6f69244c06a91b2b719b88d1944", null ],
+    [ "operator+", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#a988647161a1dc2cc5a887c51035bfd62", null ],
+    [ "operator+=", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#a20cba06911ce026099d3464c5d26a016", null ],
+    [ "operator-", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#ad415bfc5920863ce5442d23cc4427d38", null ],
+    [ "operator-", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#a4440b6897d96623a801eb9111673cc56", null ],
+    [ "operator-=", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#acf0b26643a7660a23b0ca96aa24d58b6", null ],
+    [ "operator/", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#afc3214395a375823399fb13906b85f0d", null ],
+    [ "operator/=", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#a7bdf38d8957388f99755ffeffe0254b1", null ],
+    [ "operator=", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#a93a541d48ded7b6ff66ebfd0d7576605", null ],
+    [ "operator==", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#aeba9558cd7d673b7aea3b879463f2b5a", null ],
+    [ "selfDisplay", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#a23f63d744c7451b1287f2bbfc5bddbc3", null ],
+    [ "swap", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#a865c36474e1c7635b00fe4a47e4b4a13", null ],
+    [ "myAllocator", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#ab8b875dbbbfdb5e1d899ae6d37a8a054", null ],
+    [ "myValue", "classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#a5795a02213c76d5de2b5a5da3a43735b", null ]
+];

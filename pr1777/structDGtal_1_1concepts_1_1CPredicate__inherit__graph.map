@@ -1,0 +1,27 @@
+<map id="DGtal::concepts::CPredicate&lt; T, TElement &gt;" name="DGtal::concepts::CPredicate&lt; T, TElement &gt;">
+<area shape="rect" id="Node000001" title="Aim: Defines a predicate function, ie. a functor mapping a domain into the set of booleans." alt="" coords="1203,69,1405,109"/>
+<area shape="rect" id="Node000007" href="$structDGtal_1_1concepts_1_1CPredicate.html" title=" " alt="" coords="1561,5,1764,45"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1418,66,1560,41,1561,46,1419,72"/>
+<area shape="rect" id="Node000010" href="$structDGtal_1_1concepts_1_1CPredicate.html" title=" " alt="" coords="1561,69,1764,109"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1419,87,1561,87,1561,92,1419,92"/>
+<area shape="rect" id="Node000012" href="$structDGtal_1_1concepts_1_1CPredicate.html" title=" " alt="" coords="1561,133,1764,173"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1419,107,1561,133,1560,138,1418,112"/>
+<area shape="rect" id="Node000002" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title=" " alt="" coords="924,69,1153,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1167,87,1202,87,1202,92,1167,92"/>
+<area shape="rect" id="Node000003" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="525,49,699,74"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="713,65,924,79,924,84,713,71"/>
+<area shape="rect" id="Node000004" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title="Aim: Defines a unary functor, which associates arguments to results." alt="" coords="497,99,727,139"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="740,108,900,97,924,96,924,101,900,103,741,113"/>
+<area shape="rect" id="Node000005" href="$structboost_1_1Assignable.html" title=" " alt="" coords="272,106,448,131"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="462,116,497,116,497,121,462,121"/>
+<area shape="rect" id="Node000006" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="5,106,180,131"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="194,116,272,116,272,121,194,121"/>
+<area shape="rect" id="Node000008" href="$structDGtal_1_1concepts_1_1CPointPredicate.html" title="Aim: Defines a predicate on a point." alt="" coords="1813,13,2088,38"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1778,23,1813,23,1813,28,1778,28"/>
+<area shape="rect" id="Node000009" href="$structDGtal_1_1concepts_1_1CDigitalSet.html" title="Aim: Represents a set of points within the given domain. This set of points is modifiable by the user..." alt="" coords="2137,5,2323,45"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="2102,23,2137,23,2137,28,2102,28"/>
+<area shape="rect" id="Node000011" href="$structDGtal_1_1concepts_1_1CSurfelPredicate.html" title="Aim: Defines a predicate on a surfel." alt="" coords="1861,69,2041,109"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1778,87,1860,87,1860,92,1778,92"/>
+<area shape="rect" id="Node000013" href="$structDGtal_1_1concepts_1_1CVertexPredicate.html" title="Aim: Defines a predicate on a vertex." alt="" coords="1859,133,2043,173"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1778,151,1858,151,1858,156,1778,156"/>
+</map>

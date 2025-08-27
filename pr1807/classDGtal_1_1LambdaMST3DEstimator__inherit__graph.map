@@ -1,0 +1,7 @@
+<map id="DGtal::LambdaMST3DEstimator&lt; TSpace, TSegmentation, Functor, DSSFilter &gt;" name="DGtal::LambdaMST3DEstimator&lt; TSpace, TSegmentation, Functor, DSSFilter &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,233,111"/>
+<area shape="rect" id="Node000002" href="$classDGtal_1_1LambdaMST3D.html" title="Aim: Simplify creation of Lambda MST tangent estimator." alt="" coords="798,5,1021,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="247,54,257,53,403,39,550,32,798,28,798,34,550,37,403,45,258,58,247,59"/>
+<area shape="rect" id="Node000003" href="$classDGtal_1_1LambdaMST3DEstimator.html" title=" " alt="" coords="708,85,1111,183"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,113,258,131,373,147,490,153,604,154,708,150,708,155,604,159,490,159,372,152,257,137,193,118"/>
+</map>

@@ -1,0 +1,28 @@
+<map id="DGtal::concepts::CPointFunctor&lt; T &gt;" name="DGtal::concepts::CPointFunctor&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Aim: Defines a functor on points." alt="" coords="1211,45,1472,70"/>
+<area shape="rect" id="Node000007" href="$structDGtal_1_1concepts_1_1COrientationFunctor.html" title="Aim: This concept gathers models implementing an orientation test of &#160;points in a space of dimension ..." alt="" coords="1580,7,1795,47"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1486,42,1579,34,1580,39,1486,47"/>
+<area shape="rect" id="Node000009" href="$structDGtal_1_1concepts_1_1CPointFunctor.html" title=" " alt="" coords="1559,73,1816,98"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1486,66,1559,72,1558,78,1486,72"/>
+<area shape="rect" id="Node000002" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title=" " alt="" coords="932,37,1161,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1175,55,1211,55,1211,60,1175,60"/>
+<area shape="rect" id="Node000003" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="525,17,699,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="713,33,932,47,931,53,713,38"/>
+<area shape="rect" id="Node000004" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title="Aim: Defines a unary functor, which associates arguments to results." alt="" coords="497,67,727,107"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="740,77,908,67,932,65,932,70,908,72,741,83"/>
+<area shape="rect" id="Node000005" href="$structboost_1_1Assignable.html" title=" " alt="" coords="272,74,448,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="462,84,497,84,497,89,462,89"/>
+<area shape="rect" id="Node000006" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="5,74,180,99"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="194,84,272,84,272,89,194,89"/>
+<area shape="rect" id="Node000008" href="$structDGtal_1_1concepts_1_1COrientationFunctor2.html" title="Aim: This concept is a refinement of COrientationFunctor, useful for simple algebraic curves that can..." alt="" coords="1865,5,2080,45"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1808,23,1865,23,1865,29,1808,29"/>
+<area shape="rect" id="Node000010" href="$structDGtal_1_1concepts_1_1CTrivialConstImage.html" title="Aim: Defines the concept describing a read&#45;only image, which is a refinement of CPointFunctor." alt="" coords="1882,69,2063,109"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1830,85,1882,85,1882,91,1830,90"/>
+<area shape="rect" id="Node000011" href="$structDGtal_1_1concepts_1_1CConstImage.html" title="Aim: Defines the concept describing a read&#45;only image, which is a refinement of CPointFunctor." alt="" coords="2129,47,2384,73"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="2076,76,2133,70,2134,75,2077,81"/>
+<area shape="rect" id="Node000013" href="$structDGtal_1_1concepts_1_1CTrivialImage.html" title="Aim: Defines the concept describing an image without extra ranges, which is a refinement of CTrivialC..." alt="" coords="2166,97,2347,137"/>
+<area shape="poly" id="edge12_Node000010_Node000013" title=" " alt="" coords="2077,97,2166,106,2165,111,2077,102"/>
+<area shape="rect" id="Node000012" href="$structDGtal_1_1concepts_1_1CImage.html" title="Aim: Defines the concept describing a read/write image, having an output iterator." alt="" coords="2433,77,2651,102"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="2394,71,2434,76,2433,81,2393,77"/>
+<area shape="poly" id="edge13_Node000013_Node000012" title=" " alt="" coords="2361,104,2433,97,2433,103,2361,110"/>
+</map>

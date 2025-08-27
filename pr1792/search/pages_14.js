@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['object_0',['Tutorial: making a polyhedron from a digital object',['../tutoPolyhedralisation.html',1,'packageTutorials']]],
+  ['object_20import_20export_1',['Image and digital object import/export',['../moduleIO.html',1,'packageIO']]],
+  ['objects_2',['objects',['../moduleBoard2D.html',1,'Board2D: a stream mechanism for displaying 2D digital objects'],['../moduleDigitalTopology.html',1,'Digital topology and digital objects'],['../moduleDisplay3D.html',1,'Display3D: a stream mechanism for displaying 3D DGtal objects']]],
+  ['of_203d_20parametric_20curves_3',['Digitization of 3D parametric curves',['../moduleParametricCurves.html',1,'packageGeometry']]],
+  ['of_20a_203d_20volume_20by_20the_20fast_20marching_20method_4',['Tutorial: Local morphological opening of a 3d volume by the Fast Marching Method',['../tutoFMMErosion.html',1,'packageTutorials']]],
+  ['of_20ambrosio_20tortorelli_20functional_5',['Piecewise-smooth approximation using a discrete calculus model of Ambrosio-Tortorelli functional',['../moduleGenericAT.html',1,'packageDEC']]],
+  ['of_20coba_20plane_20recognition_20algorithm_6',['Detailed explanation of COBA plane recognition algorithm',['../moduleCOBANaivePlaneRecognition.html',1,'packageGeometry']]],
+  ['of_20digital_20surface_20based_20normal_20estimator_7',['Maximal segments and slices of digital surface based normal estimator',['../moduleMaximalSegmentSliceEstimation.html',1,'packageGeometry']]],
+  ['of_20full_20digital_20convexity_8',['Applications of full digital convexity',['../moduleDigitalConvexityApplications.html',1,'packageGeometry']]],
+  ['of_20geometric_20predicates_9',['Implementation of geometric predicates',['../moduleGeometricPredicates.html',1,'packageGeometry']]],
+  ['of_20graph_10',['Topology Concepts and Models (part I, models of graph)',['../packageTopologyConcepts1.html',1,'packageTopology']]],
+  ['of_20one_20dimensional_20discrete_20structures_11',['Analysis of one-dimensional discrete structures',['../moduleGridCurveAnalysis.html',1,'packageGeometry']]],
+  ['of_20points_20in_20digital_20spaces_12',['Sets of points in digital spaces',['../moduleDigitalSets.html',1,'packageKernel']]],
+  ['ofs2off_13',['ofs2off',['http://dgtal.org/doc/tools/nightly/ofs2off.html',1,'']]],
+  ['on_20arbitrary_20containers_14',['Set operations on arbitrary containers',['../moduleSetFunctions.html',1,'packageBase']]],
+  ['on_20meshes_20and_20digital_20surfaces_15',['Curvature measures on meshes and digital surfaces',['../moduleCurvatureMeasures.html',1,'packageGeometry']]],
+  ['on_20polygonal_20surfaces_16',['Discrete differential calculus on polygonal surfaces',['../modulePolygonalCalculus.html',1,'packageDEC']]],
+  ['one_20dimensional_20discrete_20structures_17',['Analysis of one-dimensional discrete structures',['../moduleGridCurveAnalysis.html',1,'packageGeometry']]],
+  ['opening_20of_20a_203d_20volume_20by_20the_20fast_20marching_20method_18',['Tutorial: Local morphological opening of a 3d volume by the Fast Marching Method',['../tutoFMMErosion.html',1,'packageTutorials']]],
+  ['operations_20on_20arbitrary_20containers_19',['Set operations on arbitrary containers',['../moduleSetFunctions.html',1,'packageBase']]],
+  ['operator_20',['Heat Kernel Laplace&amp;ndash;Beltrami Operator',['../moduleHeatLaplaceOperator.html',1,'packageDEC']]],
+  ['or_20non_20manifold_20polygonal_20surfaces_20in_20r3_21',['Surface mesh data structure for representing manifold or non-manifold polygonal surfaces in R3',['../moduleSurfaceMesh.html',1,'packageShapes']]],
+  ['oriented_20cells_20incidence_22',['Cellular grid space and topology, unoriented and oriented cells, incidence',['../moduleCellularTopology.html',1,'packageTopology']]],
+  ['oriented_20point_20cloud_23',['Voxelization from an oriented point cloud',['../moduleWinding.html',1,'packageShapes']]],
+  ['own_20project_24',['How to use DGtal in my own project ?',['../moduleHowToUseDGtal.html',1,'packageIntroduction']]]
+];

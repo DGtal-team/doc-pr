@@ -1,0 +1,25 @@
+<map id="DGtal::concepts::CVectorSpace&lt; T &gt;" name="DGtal::concepts::CVectorSpace&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Aim: Base concept for vector space structure." alt="" coords="228,119,411,159"/>
+<area shape="rect" id="Node000003" href="$structDGtal_1_1concepts_1_1CDiscreteExteriorCalculusVectorSpace.html" title="Aim: Lift linear algebra container concept into the dec package." alt="" coords="459,62,705,102"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="424,114,489,99,490,105,425,119"/>
+<area shape="rect" id="Node000004" href="$structDGtal_1_1concepts_1_1CMatrix.html" title="Aim: Represent any static or dynamic sized matrix having sparse or dense representation." alt="" coords="471,127,693,152"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="425,137,470,137,470,142,425,142"/>
+<area shape="rect" id="Node000009" href="$structDGtal_1_1concepts_1_1CVector.html" title="Aim: Represent any static or dynamic sized column vector having sparse or dense representation." alt="" coords="471,276,693,301"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="369,164,560,274,557,278,366,169"/>
+<area shape="rect" id="Node000002" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="5,127,180,152"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,137,228,137,228,142,194,142"/>
+<area shape="rect" id="Node000005" href="$structDGtal_1_1concepts_1_1CDenseMatrix.html" title="Aim: Represent any dynamic or static sized matrix having dense representation." alt="" coords="753,5,1016,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="691,119,704,112,719,96,727,78,735,59,752,41,777,28,779,33,755,45,739,62,732,80,724,98,707,116,694,124"/>
+<area shape="rect" id="Node000006" href="$structDGtal_1_1concepts_1_1CDynamicMatrix.html" title="Aim: Represent any dynamic sized matrix having sparse or dense representation." alt="" coords="785,55,985,95"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="658,121,705,111,791,93,792,98,706,117,659,126"/>
+<area shape="rect" id="Node000007" href="$structDGtal_1_1concepts_1_1CSparseMatrix.html" title="Aim: Represent any dynamic or static sized matrix having sparse representation." alt="" coords="781,119,988,159"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="707,137,781,137,781,142,707,142"/>
+<area shape="rect" id="Node000008" href="$structDGtal_1_1concepts_1_1CStaticMatrix.html" title="Aim: Represent any static sized matrix having sparse or dense representation." alt="" coords="795,183,974,223"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="657,152,795,182,794,187,656,157"/>
+<area shape="rect" id="Node000010" href="$structDGtal_1_1concepts_1_1CDenseVector.html" title="Aim: Represent any dynamic or static sized matrix having dense representation." alt="" coords="753,248,1016,273"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="706,275,753,270,753,275,707,280"/>
+<area shape="rect" id="Node000011" href="$structDGtal_1_1concepts_1_1CDynamicVector.html" title="Aim: Represent any dynamic sized column vector having sparse or dense representation." alt="" coords="785,298,985,338"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="707,298,785,306,784,311,706,303"/>
+<area shape="rect" id="Node000012" href="$structDGtal_1_1concepts_1_1CStaticVector.html" title="Aim: Represent any static sized column vector having sparse or dense representation." alt="" coords="795,362,974,402"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="629,304,754,347,797,359,796,364,753,353,627,309"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="DGtal::concepts::CSurfelLocalEstimator&lt; T &gt;" name="DGtal::concepts::CSurfelLocalEstimator&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Aim: This concept describes an object that can process a range of surfels (that are supposed to belon..." alt="" coords="292,47,472,87"/>
+<area shape="rect" id="Node000005" href="$structDGtal_1_1concepts_1_1CDigitalSurfaceLocalEstimator.html" title="Aim: This concept describes an object that can process a range over some generic digital surface so a..." alt="" coords="520,47,727,87"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="486,65,520,65,520,70,486,70"/>
+<area shape="rect" id="Node000002" href="$structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html." alt="" coords="5,5,244,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,31,292,47,291,53,204,36"/>
+<area shape="rect" id="Node000003" href="$structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html." alt="" coords="13,55,236,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="250,65,292,65,292,70,250,70"/>
+<area shape="rect" id="Node000004" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="37,104,212,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="204,99,291,82,292,87,205,104"/>
+</map>

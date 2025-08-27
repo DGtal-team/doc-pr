@@ -1,0 +1,9 @@
+<map id="DGtal::Board2D" name="DGtal::Board2D">
+<area shape="rect" id="Node000001" title="Aim: This class specializes a &#39;Board&#39; class so as to display DGtal objects more naturally (with &lt;&lt;)...." alt="" coords="19,225,142,251"/>
+<area shape="rect" id="Node000002" href="$classLibBoard_1_1Board.html" title="Class for EPS, FIG or SVG drawings." alt="" coords="18,152,143,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,191,83,225,78,225,78,191"/>
+<area shape="rect" id="Node000003" href="$structLibBoard_1_1ShapeList.html" title="A group of shapes." alt="" coords="5,79,156,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="83,118,83,152,78,152,78,118"/>
+<area shape="rect" id="Node000004" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape." alt="" coords="17,5,144,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="83,44,83,79,78,79,78,44"/>
+</map>

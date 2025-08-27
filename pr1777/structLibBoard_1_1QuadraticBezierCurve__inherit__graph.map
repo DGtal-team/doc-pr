@@ -1,0 +1,9 @@
+<map id="LibBoard::QuadraticBezierCurve" name="LibBoard::QuadraticBezierCurve">
+<area shape="rect" id="Node000001" title="A quadratic Bezier curve having 3 control points. NB. It is also a parabola arc." alt="" coords="5,225,196,265"/>
+<area shape="rect" id="Node000002" href="$structLibBoard_1_1Triangle.html" title="A triangle. Basically a Polyline with a convenient constructor." alt="" coords="31,152,170,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,191,103,225,98,225,98,191"/>
+<area shape="rect" id="Node000003" href="$structLibBoard_1_1Polyline.html" title="A polygonal line described by a series of 2D points." alt="" coords="31,79,170,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,118,103,152,98,152,98,118"/>
+<area shape="rect" id="Node000004" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape." alt="" coords="37,5,164,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="103,44,103,79,98,79,98,44"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="DGtal::CountedPtrOrPtr&lt; T &gt;" name="DGtal::CountedPtrOrPtr&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Aim: Smart or simple pointer on T. It can be a smart pointer based on reference counts or a simple po..." alt="" coords="5,149,216,174"/>
+<area shape="rect" id="Node000002" href="$classDGtal_1_1CountedPtrOrPtr.html" title=" " alt="" coords="489,5,661,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,138,183,106,239,78,303,57,368,43,488,27,489,32,369,48,304,63,241,82,185,111,140,142"/>
+<area shape="rect" id="Node000003" href="$classDGtal_1_1CountedPtrOrPtr.html" title=" " alt="" coords="465,69,684,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,142,239,124,356,106,465,95,465,100,356,111,241,129,166,147"/>
+<area shape="rect" id="Node000004" href="$classDGtal_1_1CountedPtrOrPtr.html" title=" " alt="" coords="485,134,664,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="230,159,485,159,485,164,230,164"/>
+<area shape="rect" id="Node000005" href="$classDGtal_1_1CountedPtrOrPtr.html" title=" " alt="" coords="489,213,661,253"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="207,173,240,179,489,217,488,223,240,184,206,179"/>
+<area shape="rect" id="Node000006" href="$classDGtal_1_1CountedPtrOrPtr.html" title=" " alt="" coords="489,277,661,317"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="143,179,188,206,241,231,304,251,370,266,489,286,488,291,369,272,303,256,239,236,185,211,140,184"/>
+</map>

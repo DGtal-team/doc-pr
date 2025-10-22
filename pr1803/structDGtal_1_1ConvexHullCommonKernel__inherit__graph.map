@@ -1,0 +1,18 @@
+<map id="DGtal::ConvexHullCommonKernel&lt; dim, TCoordinateInteger, TInternalInteger &gt;" name="DGtal::ConvexHullCommonKernel&lt; dim, TCoordinateInteger, TInternalInteger &gt;">
+<area shape="rect" id="Node000001" title="Aim: the common part of all geometric kernels for computing the convex hull or Delaunay triangulation..." alt="" coords="5,200,248,255"/>
+<area shape="rect" id="Node000002" href="$structDGtal_1_1ConvexHullIntegralKernel.html" title=" " alt="" coords="867,11,1059,66"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,189,219,148,286,102,362,59,403,42,445,28,500,16,556,8,670,3,777,8,867,19,866,24,776,14,670,8,557,13,501,21,446,33,405,46,365,64,288,106,222,152,170,193"/>
+<area shape="rect" id="Node000003" href="$structDGtal_1_1ConvexHullIntegralKernel.html" title="Aim: a geometric kernel to compute the convex hull of digital points with integer&#45;only arithmetic." alt="" coords="447,43,686,98"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,193,271,168,444,107,479,95,480,100,446,112,273,173,209,198"/>
+<area shape="rect" id="Node000004" href="$structDGtal_1_1ConvexHullRationalKernel.html" title="Aim: a geometric kernel to compute the convex hull of floating points with integer&#45;only arithmetic...." alt="" coords="447,122,686,176"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="261,201,447,168,448,173,262,206"/>
+<area shape="rect" id="Node000005" href="$structDGtal_1_1DelaunayIntegralKernel.html" title="Aim: a geometric kernel to compute the Delaunay triangulation of digital points with integer&#45;only ari..." alt="" coords="457,200,677,255"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="262,225,456,225,456,230,262,230"/>
+<area shape="rect" id="Node000006" href="$structDGtal_1_1DelaunayRationalKernel.html" title="Aim: a geometric kernel to compute the Delaunay triangulation of a range of floating points with inte..." alt="" coords="455,279,679,334"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="262,249,455,284,454,289,261,254"/>
+<area shape="rect" id="Node000007" href="$structDGtal_1_1ConvexHullCommonKernel.html" title=" " alt="" coords="445,358,688,412"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="179,261,224,288,273,312,360,341,446,362,444,367,358,346,271,317,221,293,177,265"/>
+<area shape="rect" id="Node000008" href="$structDGtal_1_1ConvexHullCommonKernel.html" title=" " alt="" coords="445,436,688,491"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="153,265,203,331,236,364,273,392,314,413,358,429,446,450,444,455,356,434,312,418,271,397,233,369,199,335,149,268"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="700,61,842,50,866,48,866,53,843,56,700,66"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$structDGtal_1_1ConvexHullCommonKernel.html" title="Aim: the common part of all geometric kernels for computing the convex hull or Delaunay triangulation..." alt="" coords="5,163,248,217"/>
+<area shape="rect" id="Node000001" href="$structDGtal_1_1ConvexHullIntegralKernel.html" title=" " alt="" coords="319,5,511,60"/>
+<area shape="poly" id="edge222_Node000000_Node000001" title=" " alt="" coords="170,152,227,109,295,69,320,58,323,62,297,74,230,114,173,156"/>
+<area shape="rect" id="Node000002" href="$structDGtal_1_1ConvexHullIntegralKernel.html" title="Aim: a geometric kernel to compute the convex hull of digital points with integer&#45;only arithmetic." alt="" coords="296,84,535,139"/>
+<area shape="poly" id="edge223_Node000000_Node000002" title=" " alt="" coords="240,156,314,136,315,141,241,162"/>
+<area shape="rect" id="Node000003" href="$structDGtal_1_1ConvexHullRationalKernel.html" title="Aim: a geometric kernel to compute the convex hull of floating points with integer&#45;only arithmetic...." alt="" coords="296,163,535,217"/>
+<area shape="poly" id="edge224_Node000000_Node000003" title=" " alt="" coords="261,187,296,187,296,193,261,193"/>
+<area shape="rect" id="Node000004" href="$structDGtal_1_1DelaunayIntegralKernel.html" title="Aim: a geometric kernel to compute the Delaunay triangulation of digital points with integer&#45;only ari..." alt="" coords="305,241,525,296"/>
+<area shape="poly" id="edge225_Node000000_Node000004" title=" " alt="" coords="241,218,315,239,314,244,240,224"/>
+<area shape="rect" id="Node000005" href="$structDGtal_1_1DelaunayRationalKernel.html" title="Aim: a geometric kernel to compute the Delaunay triangulation of a range of floating points with inte..." alt="" coords="303,320,527,375"/>
+<area shape="poly" id="edge226_Node000000_Node000005" title=" " alt="" coords="174,224,231,265,297,305,325,317,323,322,295,310,228,270,171,228"/>
+</map>

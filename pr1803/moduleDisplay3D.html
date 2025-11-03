@@ -128,6 +128,7 @@ Display3D: a stream mechanism from abstract class Display3D</h1>
 <p>The semi-abstract template class <a class="el" href="classDGtal_1_1Display3D.html" title="Base class for viewing DGtal objects.">Display3D</a> defines the stream mechanism to display 3d primitive (like <a class="el" href="classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes.">PointVector</a>, <a class="el" href="classDGtal_1_1DigitalSetBySTLSet.html" title="Aim: A container class for storing sets of digital points within some given domain.">DigitalSetBySTLSet</a>, <a class="el" href="classDGtal_1_1Object.html" title="Aim: An object (or digital object) represents a set in some digital space associated with a digital t...">Object</a> ...). The <a class="el" href="classDGtal_1_1PolyscopeViewer.html">PolyscopeViewer</a> class permits an interactive visualization (based on Polyscope (OpenGL backend)).</p>
 <p><a class="el" href="classDGtal_1_1Display3D.html" title="Base class for viewing DGtal objects.">Display3D</a> have two template parameters which correspond to the digital space and the Khalimsky space used to put the figures. From the Digital Space and Khalimsky Space, we use the associated embedding mechanism to convert digital objects to structures in \(
   \mathbb{R}^n\).</p>
+<dl class="section warning"><dt>Warning</dt><dd>Do not forget to enable Polyscope at the <code>cmake</code> step, e.g. with <code>cmake .. -DGTAL_WITH_POLYSCOPE_VIEWER=true</code>.</dd></dl>
 <h1><a class="anchor" id="DGtalGLV_PolyscopeViewer"></a>
 Interactive visualization from PolyscopeViewer</h1>
 <p>The class <a class="el" href="classDGtal_1_1PolyscopeViewer.html">PolyscopeViewer</a> is a wrapper around the Polyscope library ( <a href="https://polyscope.run">https://polyscope.run</a> ). <br  />
@@ -139,7 +140,7 @@ Interactive visualization from PolyscopeViewer</h1>
 <div class="line"><span class="keyword">using namespace </span>Z3i;</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_class" href="classDGtal_1_1PolyscopeViewer.html">PolyscopeViewer&lt;&gt;</a> viewer;</div>
-<div class="ttc" id="aclassDGtal_1_1PolyscopeViewer_html"><div class="ttname"><a href="classDGtal_1_1PolyscopeViewer.html">DGtal::PolyscopeViewer</a></div><div class="ttdef"><b>Definition</b> <a href="PolyscopeViewer_8h_source.html#l00052">PolyscopeViewer.h:52</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1PolyscopeViewer_html"><div class="ttname"><a href="classDGtal_1_1PolyscopeViewer.html">DGtal::PolyscopeViewer</a></div><div class="ttdef"><b>Definition</b> <a href="PolyscopeViewer_8h_source.html#l00056">PolyscopeViewer.h:56</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
 </div><!-- fragment --><p>Then we can display some 3D primitives: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classMyPointD.html">Point</a> p1( 0, 0, 0 );</div>
 <div class="line"><a class="code hl_class" href="classMyPointD.html">Point</a> p2( 5, 5 ,5 );</div>
@@ -149,7 +150,7 @@ Interactive visualization from PolyscopeViewer</h1>
 <div class="line">viewer &lt;&lt; <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>;</div>
 <div class="line">viewer &lt;&lt; p1 &lt;&lt; p2 &lt;&lt; p3;</div>
 <div class="line">viewer.<a class="code hl_function" href="classDGtal_1_1PolyscopeViewer.html#a8581233ea7c2efc437b4813ad51d4c33">show</a>();</div>
-<div class="ttc" id="aclassDGtal_1_1PolyscopeViewer_html_a8581233ea7c2efc437b4813ad51d4c33"><div class="ttname"><a href="classDGtal_1_1PolyscopeViewer.html#a8581233ea7c2efc437b4813ad51d4c33">DGtal::PolyscopeViewer::show</a></div><div class="ttdeci">void show() override</div><div class="ttdoc">Starts the event loop and display of elements.</div><div class="ttdef"><b>Definition</b> <a href="PolyscopeViewer_8h_source.html#l00068">PolyscopeViewer.h:68</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1PolyscopeViewer_html_a8581233ea7c2efc437b4813ad51d4c33"><div class="ttname"><a href="classDGtal_1_1PolyscopeViewer.html#a8581233ea7c2efc437b4813ad51d4c33">DGtal::PolyscopeViewer::show</a></div><div class="ttdeci">void show() override</div><div class="ttdoc">Starts the event loop and display of elements.</div><div class="ttdef"><b>Definition</b> <a href="PolyscopeViewer_8h_source.html#l00072">PolyscopeViewer.h:72</a></div></div>
 <div class="ttc" id="aclassMyPointD_html"><div class="ttname"><a href="classMyPointD.html">MyPointD</a></div><div class="ttdef"><b>Definition</b> <a href="testClone2_8cpp_source.html#l00346">testClone2.cpp:346</a></div></div>
 <div class="ttc" id="atestProjection_8cpp_html_a1f1a69f8d8b037b72c2160ed12b3ef51"><div class="ttname"><a href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a></div><div class="ttdeci">Domain domain</div><div class="ttdef"><b>Definition</b> <a href="testProjection_8cpp_source.html#l00088">testProjection.cpp:88</a></div></div>
 <div class="ttc" id="atestSimpleRandomAccessRangeFromPoint_8cpp_html_acd532b318489cd93df57e0b3d136d050"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a></div><div class="ttdeci">HyperRectDomain&lt; Space &gt; Domain</div><div class="ttdef"><b>Definition</b> <a href="testSimpleRandomAccessRangeFromPoint_8cpp_source.html#l00044">testSimpleRandomAccessRangeFromPoint.cpp:44</a></div></div>
@@ -482,7 +483,7 @@ Adding other standard primitive</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageIO.html">IO package</a></li>
-    <li class="footer">Generated on Wed Oct 22 2025 13:01:16 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 3 2025 16:52:31 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

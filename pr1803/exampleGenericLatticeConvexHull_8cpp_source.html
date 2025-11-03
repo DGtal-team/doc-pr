@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('exampleGenericLatticeConvexHull_8cpp_s
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      <span class="comment">// Compute convex hull</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      QHull hull;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      <span class="keywordtype">bool</span> ok = hull.compute( X ); </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      <span class="keywordtype">int</span>  k  = hull.affine_dimension;    <span class="comment">// affine dimension of X</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      <span class="keyword">auto</span>  k  = hull.affine_dimension;    <span class="comment">// affine dimension of X</span></div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      <span class="comment">// Compute statistics</span></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      nb_per_dim [ k ] += 1;</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      nb_vertices[ k ] += hull.positions.size(); <span class="comment">// positions of vertices</span></div>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('exampleGenericLatticeConvexHull_8cpp_s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_bbc6006c4fa8019b84b7adc573485eac.html">geometry</a></li><li class="navelem"><a class="el" href="dir_66f15b50c350f28b2fac9e5372ee541e.html">tools</a></li><li class="navelem"><a class="el" href="exampleGenericLatticeConvexHull_8cpp.html">exampleGenericLatticeConvexHull.cpp</a></li>
-    <li class="footer">Generated on Wed Oct 22 2025 13:00:19 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 3 2025 16:51:34 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

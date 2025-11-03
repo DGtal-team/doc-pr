@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('moduleAffineGeometry.html',''); initRe
 <h1><a class="anchor" id="dgtal_affgeom_sec1"></a>
 Generic functions for affine geometry</h1>
 <p><a class="el" href="structA.html">A</a> set of generic functions is provided in header <code><a class="el" href="AffineGeometry_8h_source.html">DGtal/geometry/tools/AffineGeometry.h</a></code> for several affine geometry computations. They can be conveniently used since they deduce automatically the type of parameters. All these functions support number types for points and vectors that are either integers (int32_t, int64_t, BigInteger) or floating-point numbers (float, double). The computations are <b>exact</b> when types are <b>integral</b> (up to integer overflow), while a <b>tolerance</b> can be provided for floating-point numbers (default tolerance: between -1e-12 and 1e-12 is zero).</p>
-<p><b> affine dimension and affine subset </b></p>
+<p><b> Affine dimension and affine subset </b></p>
 <ul>
 <li><a class="el" href="namespaceDGtal_1_1functions.html#a2c824ceec41116e7aeb7adc31790ee58">functions::computeAffineDimension( const std::vector&lt; TPoint &gt;&amp; X,
   const double tolerance )</a> Given a range of points <em>X</em>, returns the affine dimension of its spanned affine subspace.</li>
@@ -125,7 +125,7 @@ Generic functions for affine geometry</h1>
 <li><a class="el" href="namespaceDGtal_1_1functions.html#a0de6e8e8febd0c0e702941aae849583d">functions::computeAffineSubset( const std::vector&lt;TPoint&gt;&amp; X, const
   TIndexRange&amp; I, const double tolerance )</a> Given a range of points <em>X</em> and a subset of it given by indices <em>I</em>, returns a subset of these points that form an affine basis of <em>X</em>[I]. Equivalently it is a simplex whose affine space spans all the points of <em>X</em>[I].</li>
 </ul>
-<p><b> affine basis and independent vectors </b></p>
+<p><b> Affine basis and independent vectors </b></p>
 <p>The computed bases are in echelon reduced form, except when using completeBasis where the last vector may be asked to be orthogonal to all the others.</p>
 <ul>
 <li><a class="el" href="namespaceDGtal_1_1functions.html#a30c294205208734c7c225a5bcd3a52f5">functions::getAffineBasis( TInputPoint&amp; o, std::vector&lt; TPoint &gt;&amp;
@@ -138,12 +138,12 @@ Generic functions for affine geometry</h1>
 <li><a class="el" href="namespaceDGtal_1_1functions.html#a88db7bc56059fe613108efa44008b539">functions::getCompleteBasis( std::vector&lt; TPoint &gt;&amp; basis, bool
   normal_vector, const double tolerance )</a> Complete the vectors <em>basis</em> with independent vectors so as to form a basis of the space. When <em>normal_vector</em> is true, the last added vector is guaranteed to be <b>orthogonal</b> to all the previous vectors, otherwise it is just an independent canonic vector.</li>
 </ul>
-<p><b> affine basis of codimension 1 </b></p>
+<p><b> Affine basis of codimension 1 </b></p>
 <ul>
 <li><a class="el" href="namespaceDGtal_1_1functions.html#a116c996f7f5280d44e138e3b7549cb9f">functions::getOrthogonalLatticeBasis( std::vector&lt; TPoint &gt;&amp; B,
   const TInputPoint&amp; N, bool shortened )</a> Given a lattice vector <em>N</em>, returns a possible basis for its orthogonal d-1 dimensional lattice. The returned basis is guaranteed to span all the lattice points contained in the vector space orthogonal to <em>N</em>. If <code>shortened</code> is false, the basis is in echelon form, otherwise the vectors are shortened by pairwise linear combinations.</li>
 </ul>
-<p><b> orthogonal vector to basis of codimension 1 </b></p>
+<p><b> Orthogonal vector to basis of codimension 1 </b></p>
 <ul>
 <li><a class="el" href="namespaceDGtal_1_1functions.html#abf13f0eeaaf6bbd4c367376b3ad4a85c">functions::computeOrthogonalVectorToBasis( const
   std::vector&lt;TPoint&gt;&amp; basis )</a> Given <code>d-1</code> independent vectors <em>basis</em> in dD, returns a vector that is orthogonal to each of them.</li>
@@ -152,7 +152,7 @@ Generic functions for affine geometry</h1>
 <li><a class="el" href="namespaceDGtal_1_1functions.html#ad9470ebd53573c4c86a168680f581eb2">functions::getOrthogonalVector( TPoint&amp; w, const std::vector&lt;
   TInputPoint &gt;&amp; X, const double tolerance )</a> Given a range of points <em>X</em>, returns a vector that is orthogonal to this affine set, if it is d-1-dimensional.</li>
 </ul>
-<p><b> utilities </b></p>
+<p><b> Utilities </b></p>
 <ul>
 <li><a class="el" href="namespaceDGtal_1_1functions.html#afb73caf8786b82dd56b4e2a179f1f9e8">functions::computeSimplifiedVector( const TPoint&amp; v )</a> Given a vector, returns the aligned vector with its component simplified by the gcd of all components (when the components are integers) or the aligned vector with a maximum oo-norm of 1 (when the components are floating-point numbers).</li>
 </ul>
@@ -293,18 +293,18 @@ Projecting points onto an affine basis</h1>
     TInputPoint&amp; normal, AffineBasis::Type type, const double delta,
     const double tolerance ) Creates an affine basis of codimension 1, going through <em>origin</em> and orthogonal to the lattice vector <em>normal</em>.</li>
 </ul>
-<p><b> standard services </b></p>
+<p><b> Standard services </b></p>
 <ul>
 <li><a class="el" href="structDGtal_1_1AffineBasis.html#a2230aaa5e3519d25c87b729064afc9e8">AffineBasis::dimension()</a> returns the dimension of the spanned affine subspace.</li>
 <li><a class="el" href="structDGtal_1_1AffineBasis.html#a22496d1306e12ec874f3b42e4ae84965">AffineBasis::origin()</a> returns a point on the spanned affine subspace.</li>
 <li><a class="el" href="structDGtal_1_1AffineBasis.html#adfda3f9e58176af09836584a387c4bf8">AffineBasis::basis()</a> returns the vectors spanning the affine subspace.</li>
 </ul>
-<p><b> geometric services </b></p>
+<p><b> Geometric services </b></p>
 <ul>
 <li><a class="el" href="structDGtal_1_1AffineBasis.html#a03d5a9199da8994a47ec2a61e4edf9ed">AffineBasis::isParallel</a> returns 'true' iff the vectors <em>w</em> lies in this affine space.</li>
 <li><a class="el" href="structDGtal_1_1AffineBasis.html#afa520247341db345e01f23eb1fa2e25d">AffineBasis::isOnAffineSpace</a> returns 'true' iff the point <em>p</em> lies in this affine space.</li>
 </ul>
-<p><b> projection services </b></p>
+<p><b> Projection services </b></p>
 <ul>
 <li><a class="el" href="structDGtal_1_1AffineBasis.html#a1dc9cf9a917097860ddb9ba3f613eba6">AffineBasis::decompose</a> Decomposes a point <em>p</em> into a tuple \(
     (d,L,R) \), such that: \( d (p - o) = L \cdot B + R \), where R is independent from this basis \( B=(b_0, \ldots, b_i) \), with origin <em>o</em>. <em>d</em> is a scalar, \( L/d \) are the rational coordinates of \( (p-o) \) in the basis, <em>R</em> is the remainer vector. Note that <em>R</em> is not null whenever <em>p</em> does not belong to the affine space.</li>
@@ -354,7 +354,7 @@ Notes</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
-    <li class="footer">Generated on Wed Oct 22 2025 13:01:16 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 3 2025 16:52:31 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('modulePolygonalCalculus.html',''); ini
 <dl class="section note"><dt>Note</dt><dd>The sign convention for the divergence and the Laplacian operator is opposite to the one of <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[45]</a>. This is to match the usual mathematical convention that the Laplacian (and the Laplacian-Beltrami) has negative eigenvalues (and is the sum of second derivatives in the cartesian grid). It also follows the formal adjointness of exterior derivative and opposite of divergence as relation \( \langle \mathrm{d} u, v \rangle = - \langle u,
 \mathrm{div} v \rangle \). See also <a href="https://en.wikipedia.org/wiki/Laplace–Beltrami_operator">https://en.wikipedia.org/wiki/Laplace–Beltrami_operator</a></dd>
 <dd>
-All illustrations below have been obtained using the DGtal+<a href="https://polyscope.run">polyscope</a> examples <a class="el" href="dgtalCalculus_8cpp_source.html">dgtalCalculus.cpp</a>, <a class="el" href="dgtalCalculus-single_8cpp.html">dgtalCalculus-single.cpp</a> and <a class="el" href="dgtalCalculus-poisson_8cpp.html">dgtalCalculus-poisson.cpp</a>. To build these examples, enable the <code>DGTAL_BUILD_POLYSCOPE_EXAMPLES</code> variable (e.g. <code>cmake .. -DDGTAL_BUILD_POLYSCOPE_EXAMPLES=ON</code>).</dd></dl>
+All illustrations below have been obtained using the DGtal+<a href="https://polyscope.run">polyscope</a> examples <a class="el" href="dgtalCalculus_8cpp_source.html">dgtalCalculus.cpp</a>, <a class="el" href="dgtalCalculus-single_8cpp.html">dgtalCalculus-single.cpp</a> and <a class="el" href="dgtalCalculus-poisson_8cpp.html">dgtalCalculus-poisson.cpp</a>. To build these examples, enable the <code>DGTAL_WITH_POLYSCOPE_VIEWER</code> variable (e.g. <code>cmake .. -DDGTAL_WITH_POLYSCOPE_VIEWER=ON</code>).</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>The implementation heavily relies on implicit operators with many Eigen based small matrice constructions, which has a huge overhead in Debug mode. Please consider to build the examples in Release (<em>e.g.</em> <code>CMAKE_BUILD_TYPE</code> variable) for high performance on large geometrical objects.</dd></dl>
 <h1><a class="anchor" id="sectPolygonalCalculusIntro"></a>
 Introduction</h1>
@@ -497,7 +497,7 @@ Cache mechanisms and high-performance computing</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageDEC.html">DEC package</a></li>
-    <li class="footer">Generated on Wed Oct 22 2025 13:01:15 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 3 2025 16:52:30 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

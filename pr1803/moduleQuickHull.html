@@ -191,7 +191,7 @@ Convex hull of lattice points</h2>
 </div><!-- fragment --><p>You should then define some typedefs:</p>
 <div class="fragment"><div class="line">  <span class="keyword">typedef</span> <a class="code hl_struct" href="structDGtal_1_1ConvexHullIntegralKernel.html">DGtal::ConvexHullIntegralKernel&lt; 3 &gt;</a> <a class="code hl_struct" href="structDGtal_1_1ConvexHullIntegralKernel.html">Kernel3D</a>;</div>
 <div class="line">  <span class="keyword">typedef</span> <a class="code hl_struct" href="structDGtal_1_1QuickHull.html">DGtal::QuickHull&lt; Kernel3D &gt;</a>         <a class="code hl_struct" href="structDGtal_1_1QuickHull.html">QuickHull3D</a>;</div>
-<div class="ttc" id="astructDGtal_1_1ConvexHullIntegralKernel_html"><div class="ttname"><a href="structDGtal_1_1ConvexHullIntegralKernel.html">DGtal::ConvexHullIntegralKernel</a></div><div class="ttdoc">Aim: a geometric kernel to compute the convex hull of digital points with integer-only arithmetic.</div><div class="ttdef"><b>Definition</b> <a href="QuickHullKernels_8h_source.html#l00384">QuickHullKernels.h:386</a></div></div>
+<div class="ttc" id="astructDGtal_1_1ConvexHullIntegralKernel_html"><div class="ttname"><a href="structDGtal_1_1ConvexHullIntegralKernel.html">DGtal::ConvexHullIntegralKernel</a></div><div class="ttdoc">Aim: a geometric kernel to compute the convex hull of digital points with integer-only arithmetic.</div><div class="ttdef"><b>Definition</b> <a href="QuickHullKernels_8h_source.html#l00371">QuickHullKernels.h:373</a></div></div>
 <div class="ttc" id="astructDGtal_1_1QuickHull_html"><div class="ttname"><a href="structDGtal_1_1QuickHull.html">DGtal::QuickHull</a></div><div class="ttdoc">Aim: Implements the quickhull algorithm by Barber et al. , a famous arbitrary dimensional convex hull...</div><div class="ttdef"><b>Definition</b> <a href="QuickHull_8h_source.html#l00140">QuickHull.h:141</a></div></div>
 </div><!-- fragment --><p>Then we assume that <em>V</em> contains a range of lattice 3D points (with either 32 bits or 64 bits precision). You may compute their convex hull (facets and vertices) with (<a class="el" href="structDGtal_1_1QuickHull.html#a0600b38897cc9beb1df378454b9cd75b">QuickHull::setInput</a> and <a class="el" href="structDGtal_1_1QuickHull.html#ae2f105ab38ab215d790773737f45cf0d">QuickHull::computeConvexHull</a>):</p>
 <div class="fragment"><div class="line">  <a class="code hl_struct" href="structDGtal_1_1QuickHull.html">QuickHull3D</a> hull;</div>
@@ -263,7 +263,7 @@ Convex hull of rational points</h2>
 </div><!-- fragment --><p>You should then define some typedefs:</p>
 <div class="fragment"><div class="line">  <span class="keyword">typedef</span> <a class="code hl_struct" href="structDGtal_1_1ConvexHullRationalKernel.html">DGtal::ConvexHullRationalKernel&lt; 3 &gt;</a> <a class="code hl_struct" href="structDGtal_1_1ConvexHullIntegralKernel.html">Kernel3D</a>;</div>
 <div class="line">  <span class="keyword">typedef</span> <a class="code hl_struct" href="structDGtal_1_1QuickHull.html">DGtal::QuickHull&lt; Kernel3D &gt;</a>         <a class="code hl_struct" href="structDGtal_1_1QuickHull.html">QuickHull3D</a>;</div>
-<div class="ttc" id="astructDGtal_1_1ConvexHullRationalKernel_html"><div class="ttname"><a href="structDGtal_1_1ConvexHullRationalKernel.html">DGtal::ConvexHullRationalKernel</a></div><div class="ttdoc">Aim: a geometric kernel to compute the convex hull of floating points with integer-only arithmetic....</div><div class="ttdef"><b>Definition</b> <a href="QuickHullKernels_8h_source.html#l00670">QuickHullKernels.h:672</a></div></div>
+<div class="ttc" id="astructDGtal_1_1ConvexHullRationalKernel_html"><div class="ttname"><a href="structDGtal_1_1ConvexHullRationalKernel.html">DGtal::ConvexHullRationalKernel</a></div><div class="ttdoc">Aim: a geometric kernel to compute the convex hull of floating points with integer-only arithmetic....</div><div class="ttdef"><b>Definition</b> <a href="QuickHullKernels_8h_source.html#l00654">QuickHullKernels.h:656</a></div></div>
 </div><!-- fragment --><p>Then we assume that <em>V</em> contains a range of real 3D points (with double precision). You may compute their approximate convex hull (facets and vertices) with the following lines (<a class="el" href="structDGtal_1_1QuickHull.html#a0600b38897cc9beb1df378454b9cd75b">QuickHull::setInput</a> and <a class="el" href="structDGtal_1_1QuickHull.html#ae2f105ab38ab215d790773737f45cf0d">QuickHull::computeConvexHull</a>):</p>
 <div class="fragment"><div class="line">  <a class="code hl_struct" href="structDGtal_1_1ConvexHullIntegralKernel.html">Kernel3D</a> kernel( precision );</div>
 <div class="line">  <a class="code hl_struct" href="structDGtal_1_1QuickHull.html">QuickHull3D</a> hull( kernel );</div>
@@ -341,7 +341,7 @@ Delaunay cell complex of lattice points (2D)</h2>
 <p>Computing the Delaunay complex of lattice points is very similar to computing its convex hull. You should just use the appropriate kernel as follows:</p>
 <div class="fragment"><div class="line">  <span class="keyword">typedef</span> <a class="code hl_struct" href="structDGtal_1_1DelaunayIntegralKernel.html">DGtal::DelaunayIntegralKernel&lt; 2 &gt;</a> Kernel2D;</div>
 <div class="line">  <span class="keyword">typedef</span> <a class="code hl_struct" href="structDGtal_1_1QuickHull.html">DGtal::QuickHull&lt; Kernel2D &gt;</a>       Delaunay2D;</div>
-<div class="ttc" id="astructDGtal_1_1DelaunayIntegralKernel_html"><div class="ttname"><a href="structDGtal_1_1DelaunayIntegralKernel.html">DGtal::DelaunayIntegralKernel</a></div><div class="ttdoc">Aim: a geometric kernel to compute the Delaunay triangulation of digital points with integer-only ari...</div><div class="ttdef"><b>Definition</b> <a href="QuickHullKernels_8h_source.html#l00518">QuickHullKernels.h:520</a></div></div>
+<div class="ttc" id="astructDGtal_1_1DelaunayIntegralKernel_html"><div class="ttname"><a href="structDGtal_1_1DelaunayIntegralKernel.html">DGtal::DelaunayIntegralKernel</a></div><div class="ttdoc">Aim: a geometric kernel to compute the Delaunay triangulation of digital points with integer-only ari...</div><div class="ttdef"><b>Definition</b> <a href="QuickHullKernels_8h_source.html#l00502">QuickHullKernels.h:504</a></div></div>
 </div><!-- fragment --><p>Then we assume that <em>V</em> contains a range of lattice 3D points (with either 32 bits or 64 bits precision). You may compute their Delaunay complex hull (facets and vertices) with (<a class="el" href="structDGtal_1_1QuickHull.html#a0600b38897cc9beb1df378454b9cd75b">QuickHull::setInput</a> and <a class="el" href="structDGtal_1_1QuickHull.html#ae2f105ab38ab215d790773737f45cf0d">QuickHull::computeConvexHull</a>):</p>
 <div class="fragment"><div class="line">  Delaunay2D hull;</div>
 <div class="line">  hull.<a class="code hl_function" href="structDGtal_1_1QuickHull.html#a0600b38897cc9beb1df378454b9cd75b">setInput</a>( V );</div>
@@ -544,7 +544,7 @@ Generic convex hulls</h1>
 <div class="line">      <span class="comment">// Compute convex hull</span></div>
 <div class="line">      QHull hull;</div>
 <div class="line">      <span class="keywordtype">bool</span> ok = hull.compute( X ); </div>
-<div class="line">      <span class="keywordtype">int</span>  k  = hull.affine_dimension;    <span class="comment">// affine dimension of X</span></div>
+<div class="line">      <span class="keyword">auto</span>  k  = hull.affine_dimension;    <span class="comment">// affine dimension of X</span></div>
 <div class="line">      <span class="comment">// Compute statistics</span></div>
 <div class="line">      nb_per_dim [ k ] += 1;</div>
 <div class="line">      nb_vertices[ k ] += hull.positions.size(); <span class="comment">// positions of vertices</span></div>
@@ -639,7 +639,7 @@ Further notes</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li><li class="navelem"><a class="el" href="moduleAffineGeometry.html">Affine geometry of points and vectors</a></li>
-    <li class="footer">Generated on Wed Oct 22 2025 13:01:16 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 3 2025 16:52:31 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,0 +1,19 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classDGtal_1_1StarShaped2D.html" title=" " alt="" coords="5,187,164,227"/>
+<area shape="rect" id="Node000001" href="$classDGtal_1_1Astroid2D.html" title=" " alt="" coords="216,5,416,31"/>
+<area shape="poly" id="edge281_Node000000_Node000001" title=" " alt="" coords="100,173,144,106,174,71,211,41,237,28,239,33,213,46,178,75,148,109,104,176"/>
+<area shape="rect" id="Node000002" href="$classDGtal_1_1AccFlower2D.html" title="Aim: Model of the concept StarShaped represents any accelerated flower in the plane." alt="" coords="240,55,392,95"/>
+<area shape="poly" id="edge282_Node000000_Node000002" title=" " alt="" coords="115,175,159,139,211,105,239,93,241,98,213,110,162,143,119,179"/>
+<area shape="rect" id="Node000003" href="$classDGtal_1_1Astroid2D.html" title="Aim: Model of the concept StarShaped represents an astroid." alt="" coords="212,120,420,145"/>
+<area shape="poly" id="edge283_Node000000_Node000003" title=" " alt="" coords="143,179,211,154,253,143,254,148,213,159,145,184"/>
+<area shape="rect" id="Node000004" href="$classDGtal_1_1Ball2D.html" title="Aim: Model of the concept StarShaped represents any circle in the plane." alt="" coords="223,169,409,195"/>
+<area shape="poly" id="edge284_Node000000_Node000004" title=" " alt="" coords="177,195,222,190,223,195,178,200"/>
+<area shape="rect" id="Node000005" href="$classDGtal_1_1Ellipse2D.html" title="Aim: Model of the concept StarShaped represents any ellipse in the plane." alt="" coords="213,219,419,244"/>
+<area shape="poly" id="edge285_Node000000_Node000005" title=" " alt="" coords="178,214,213,218,213,223,177,220"/>
+<area shape="rect" id="Node000006" href="$classDGtal_1_1Flower2D.html" title="Aim: Model of the concept StarShaped represents any flower with k&#45;petals in the plane." alt="" coords="213,268,419,293"/>
+<area shape="poly" id="edge286_Node000000_Node000006" title=" " alt="" coords="148,230,213,253,259,265,257,271,211,258,147,235"/>
+<area shape="rect" id="Node000007" href="$classDGtal_1_1Lemniscate2D.html" title="Aim: Model of the concept StarShaped represents a lemniscate." alt="" coords="236,318,396,358"/>
+<area shape="poly" id="edge287_Node000000_Node000007" title=" " alt="" coords="119,235,162,270,213,302,243,315,241,320,211,307,159,274,116,239"/>
+<area shape="rect" id="Node000008" href="$classDGtal_1_1NGon2D.html" title="Aim: Model of the concept StarShaped represents any regular k&#45;gon in the plane." alt="" coords="217,383,415,408"/>
+<area shape="poly" id="edge288_Node000000_Node000008" title=" " alt="" coords="104,238,148,305,178,339,213,368,239,380,237,385,211,372,175,343,144,308,100,241"/>
+</map>

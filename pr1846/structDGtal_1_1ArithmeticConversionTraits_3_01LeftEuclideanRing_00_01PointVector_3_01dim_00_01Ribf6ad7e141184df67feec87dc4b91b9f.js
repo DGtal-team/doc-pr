@@ -1,0 +1,4 @@
+var structDGtal_1_1ArithmeticConversionTraits_3_01LeftEuclideanRing_00_01PointVector_3_01dim_00_01Ribf6ad7e141184df67feec87dc4b91b9f =
+[
+    [ "type", "structDGtal_1_1ArithmeticConversionTraits_3_01LeftEuclideanRing_00_01PointVector_3_01dim_00_01Ribf6ad7e141184df67feec87dc4b91b9f.html#a9b08882d5c71a28c2e1b22e9154735fd", null ]
+];

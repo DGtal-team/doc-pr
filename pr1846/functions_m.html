@@ -16,16 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="MathJax-4.1.1/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -683,9 +680,9 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 <li>myKeepInsideDom&#160;:&#160;<a class="el" href="classDGtal_1_1functors_1_1SliceRotator2D.html#a620175757a8187385bf3532e851cb72b">DGtal::functors::SliceRotator2D&lt; TDomain3D, TInteger &gt;</a></li>
 <li>myKernel&#160;:&#160;<a class="el" href="classDGtal_1_1DigitalSurfaceConvolver.html#a63311f05d77364c2fd5fc3dbb342fc07">DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, dimension &gt;</a>, <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#a6d12d6395da5986011afc1f2e4131b61">DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 2 &gt;</a>, <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_013_01_4.html#ab54eaa32a45e5dca8bfa173aafdedbee">DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 3 &gt;</a>, <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a4f8a0ff07860a56c68ddf5f7957dad52">DGtal::IntegralInvariantCovarianceEstimator&lt; TKSpace, TPointPredicate, TCovarianceMatrixFunctor &gt;</a>, <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#aa5ca781f8c8ce33df205edc792b73b8b">DGtal::IntegralInvariantVolumeEstimator&lt; TKSpace, TPointPredicate, TVolumeFunctor &gt;</a></li>
 <li>myKernelFunctor&#160;:&#160;<a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a47cc1d49a4fa4c092b5c692e8dc872f5">DGtal::IntegralInvariantCovarianceEstimator&lt; TKSpace, TPointPredicate, TCovarianceMatrixFunctor &gt;</a>, <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a11437dce6bb0673c31b81a50f67dbdc6">DGtal::IntegralInvariantVolumeEstimator&lt; TKSpace, TPointPredicate, TVolumeFunctor &gt;</a></li>
+<li>myKernelKCoordsOrigin&#160;:&#160;<a class="el" href="classDGtal_1_1DigitalSurfaceConvolver.html#a294de41130c8e5ae95b6162ebbcab37e">DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, dimension &gt;</a>, <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#a7b61a94781c038e01991f712c75744e0">DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 2 &gt;</a>, <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_013_01_4.html#a3bc0ed72285017b1e37f3d79302180c9">DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 3 &gt;</a></li>
 <li>myKernelMask&#160;:&#160;<a class="el" href="classDGtal_1_1DigitalSurfaceConvolver.html#aa09a209f14828e3bebcd9f41601bf3b6">DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, dimension &gt;</a>, <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#ae775dcf9d6631c7da0d21ad5eddd298c">DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 2 &gt;</a>, <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_013_01_4.html#a2035a6a731b2b683b123a89a019488a4">DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 3 &gt;</a></li>
 <li>myKernels&#160;:&#160;<a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a1160bd9217290a2fc237d61217769249">DGtal::IntegralInvariantCovarianceEstimator&lt; TKSpace, TPointPredicate, TCovarianceMatrixFunctor &gt;</a>, <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a9acee96eee63ead5cc7d316aee3496b3">DGtal::IntegralInvariantVolumeEstimator&lt; TKSpace, TPointPredicate, TVolumeFunctor &gt;</a></li>
-<li>myKernelSpelOrigin&#160;:&#160;<a class="el" href="classDGtal_1_1DigitalSurfaceConvolver.html#a4afcb3cb2adf994b5e1c7f108bb139cc">DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, dimension &gt;</a>, <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#aae26cb89cff708c6ed4f8122c9c31f6a">DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 2 &gt;</a>, <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_013_01_4.html#aced4fd0f2e67853d3f40fb52ba5a981b">DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 3 &gt;</a></li>
 <li>myKernelsSet&#160;:&#160;<a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#ab41dd068888100f6f692d6d1b11dce91">DGtal::IntegralInvariantCovarianceEstimator&lt; TKSpace, TPointPredicate, TCovarianceMatrixFunctor &gt;</a>, <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a19f8eca9f9a0ecf18b8f253a607f9e71">DGtal::IntegralInvariantVolumeEstimator&lt; TKSpace, TPointPredicate, TVolumeFunctor &gt;</a></li>
 <li>myKey&#160;:&#160;<a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree_1_1Node.html#a67585376461bbe0a00daf11c3c4dd95e">DGtal::experimental::ImageContainerByHashTree&lt; TDomain, TValue, THashKey &gt;::Node</a></li>
 <li>myKeySize&#160;:&#160;<a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#aa4218b9ca43d163bbc922208ed8f60a5">DGtal::experimental::ImageContainerByHashTree&lt; TDomain, TValue, THashKey &gt;</a></li>
@@ -1160,7 +1157,7 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 27 2026 16:49:44 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Apr 9 2026 15:20:49 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

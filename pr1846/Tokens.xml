@@ -165645,6 +165645,36 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>myKernelKCoordsOrigin</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>DGtal::DigitalSurfaceConvolver</Scope>
+    </TokenIdentifier>
+    <Path>classDGtal_1_1DigitalSurfaceConvolver.html</Path>
+    <Anchor>a294de41130c8e5ae95b6162ebbcab37e</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>myKernelKCoordsOrigin</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 2 &gt;</Scope>
+    </TokenIdentifier>
+    <Path>classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html</Path>
+    <Anchor>a7b61a94781c038e01991f712c75744e0</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>myKernelKCoordsOrigin</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 3 &gt;</Scope>
+    </TokenIdentifier>
+    <Path>classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_013_01_4.html</Path>
+    <Anchor>a3bc0ed72285017b1e37f3d79302180c9</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>myKernelMask</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
@@ -165692,36 +165722,6 @@
     </TokenIdentifier>
     <Path>classDGtal_1_1IntegralInvariantVolumeEstimator.html</Path>
     <Anchor>a9acee96eee63ead5cc7d316aee3496b3</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>myKernelSpelOrigin</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>DGtal::DigitalSurfaceConvolver</Scope>
-    </TokenIdentifier>
-    <Path>classDGtal_1_1DigitalSurfaceConvolver.html</Path>
-    <Anchor>a4afcb3cb2adf994b5e1c7f108bb139cc</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>myKernelSpelOrigin</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 2 &gt;</Scope>
-    </TokenIdentifier>
-    <Path>classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html</Path>
-    <Anchor>aae26cb89cff708c6ed4f8122c9c31f6a</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>myKernelSpelOrigin</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 3 &gt;</Scope>
-    </TokenIdentifier>
-    <Path>classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_013_01_4.html</Path>
-    <Anchor>aced4fd0f2e67853d3f40fb52ba5a981b</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>

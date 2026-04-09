@@ -16,16 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="MathJax-4.1.1/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -269,9 +266,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ae775dcf9d6631c7da0d21ad5eddd298c" id="r_ae775dcf9d6631c7da0d21ad5eddd298c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#a84dfe7f90492598d9dd40fae859d5b39">PairIterators</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#ae775dcf9d6631c7da0d21ad5eddd298c">myKernelMask</a></td></tr>
 <tr class="memdesc:ae775dcf9d6631c7da0d21ad5eddd298c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two choice to iterate over the full kernel. See <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#a274fec9a986a78de4f0a67428fa03bca">init()</a> for more information.  <br /></td></tr>
 <tr class="separator:ae775dcf9d6631c7da0d21ad5eddd298c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae26cb89cff708c6ed4f8122c9c31f6a" id="r_aae26cb89cff708c6ed4f8122c9c31f6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#ab2a7f972d59f5999698383699469ac69">Spel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#aae26cb89cff708c6ed4f8122c9c31f6a">myKernelSpelOrigin</a></td></tr>
-<tr class="memdesc:aae26cb89cff708c6ed4f8122c9c31f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy of the origin cell of the kernel.  <br /></td></tr>
-<tr class="separator:aae26cb89cff708c6ed4f8122c9c31f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b61a94781c038e01991f712c75744e0" id="r_a7b61a94781c038e01991f712c75744e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a70d1b8007551de58a7b8ccee328bed00">KSpace::Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#a7b61a94781c038e01991f712c75744e0">myKernelKCoordsOrigin</a></td></tr>
+<tr class="memdesc:a7b61a94781c038e01991f712c75744e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy of the origin cell of the kernel.  <br /></td></tr>
+<tr class="separator:a7b61a94781c038e01991f712c75744e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename TFunctor, typename TKernelFunctor, typename TKSpace, typename TDigitalKernel&gt;<br />
@@ -1927,6 +1924,34 @@ template&lt;typename TFunctor , typename TKernelFunctor , typename TKSpace , typ
 
 </div>
 </div>
+<a id="a7b61a94781c038e01991f712c75744e0" name="a7b61a94781c038e01991f712c75744e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b61a94781c038e01991f712c75744e0">&#9670;&#160;</a></span>myKernelKCoordsOrigin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TFunctor , typename TKernelFunctor , typename TKSpace , typename TDigitalKernel &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a70d1b8007551de58a7b8ccee328bed00">KSpace::Point</a> <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver.html">DGtal::DigitalSurfaceConvolver</a>&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 2 &gt;::myKernelKCoordsOrigin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy of the origin cell of the kernel. </p>
+
+<p class="definition">Definition at line <a class="el" href="DigitalSurfaceConvolver_8h_source.html#l00778">778</a> of file <a class="el" href="DigitalSurfaceConvolver_8h_source.html">DigitalSurfaceConvolver.h</a>.</p>
+
+</div>
+</div>
 <a id="ae775dcf9d6631c7da0d21ad5eddd298c" name="ae775dcf9d6631c7da0d21ad5eddd298c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae775dcf9d6631c7da0d21ad5eddd298c">&#9670;&#160;</a></span>myKernelMask</h2>
 
@@ -1952,34 +1977,6 @@ template&lt;typename TFunctor , typename TKernelFunctor , typename TKSpace , typ
 <p>Two choice to iterate over the full kernel. See <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#a274fec9a986a78de4f0a67428fa03bca">init()</a> for more information. </p>
 
 <p class="definition">Definition at line <a class="el" href="DigitalSurfaceConvolver_8h_source.html#l00776">776</a> of file <a class="el" href="DigitalSurfaceConvolver_8h_source.html">DigitalSurfaceConvolver.h</a>.</p>
-
-</div>
-</div>
-<a id="aae26cb89cff708c6ed4f8122c9c31f6a" name="aae26cb89cff708c6ed4f8122c9c31f6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae26cb89cff708c6ed4f8122c9c31f6a">&#9670;&#160;</a></span>myKernelSpelOrigin</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TFunctor , typename TKernelFunctor , typename TKSpace , typename TDigitalKernel &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#ab2a7f972d59f5999698383699469ac69">Spel</a> <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver.html">DGtal::DigitalSurfaceConvolver</a>&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 2 &gt;::myKernelSpelOrigin</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Copy of the origin cell of the kernel. </p>
-
-<p class="definition">Definition at line <a class="el" href="DigitalSurfaceConvolver_8h_source.html#l00778">778</a> of file <a class="el" href="DigitalSurfaceConvolver_8h_source.html">DigitalSurfaceConvolver.h</a>.</p>
 
 </div>
 </div>
@@ -2076,7 +2073,7 @@ template&lt;typename TFunctor , typename TKernelFunctor , typename TKSpace , typ
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html">DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 2 &gt;</a></li>
-    <li class="footer">Generated on Fri Mar 27 2026 16:49:20 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Apr 9 2026 15:20:30 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

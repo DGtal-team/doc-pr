@@ -50,8 +50,8 @@ var classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01
     [ "myFFunctor", "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_013_01_4.html#a9e60afdec12b6606d91c9d233c313abc", null ],
     [ "myGFunctor", "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_013_01_4.html#a24e44967bcffe07ffa5673a5fa1d8265", null ],
     [ "myKernel", "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_013_01_4.html#ab54eaa32a45e5dca8bfa173aafdedbee", null ],
+    [ "myKernelKCoordsOrigin", "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_013_01_4.html#a3bc0ed72285017b1e37f3d79302180c9", null ],
     [ "myKernelMask", "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_013_01_4.html#a2035a6a731b2b683b123a89a019488a4", null ],
-    [ "myKernelSpelOrigin", "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_013_01_4.html#aced4fd0f2e67853d3f40fb52ba5a981b", null ],
     [ "myKSpace", "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_013_01_4.html#a5a8c476290dcb1c95378a8a0f29fbe8f", null ],
     [ "myMasks", "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_013_01_4.html#a5c59fe345d62109c7dc9a1f07d35c408", null ],
     [ "nbMoments", "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_013_01_4.html#a9d9a154f44b0e7fa5913e92d2b4a4404", null ]

@@ -49,8 +49,8 @@ var classDGtal_1_1DigitalSurfaceConvolver =
     [ "myFFunctor", "classDGtal_1_1DigitalSurfaceConvolver.html#a0d7053df2e51854c3f843fc00c1838cb", null ],
     [ "myGFunctor", "classDGtal_1_1DigitalSurfaceConvolver.html#a6c4548d167896e8f3e454f6a6fcac669", null ],
     [ "myKernel", "classDGtal_1_1DigitalSurfaceConvolver.html#a63311f05d77364c2fd5fc3dbb342fc07", null ],
+    [ "myKernelKCoordsOrigin", "classDGtal_1_1DigitalSurfaceConvolver.html#a294de41130c8e5ae95b6162ebbcab37e", null ],
     [ "myKernelMask", "classDGtal_1_1DigitalSurfaceConvolver.html#aa09a209f14828e3bebcd9f41601bf3b6", null ],
-    [ "myKernelSpelOrigin", "classDGtal_1_1DigitalSurfaceConvolver.html#a4afcb3cb2adf994b5e1c7f108bb139cc", null ],
     [ "myKSpace", "classDGtal_1_1DigitalSurfaceConvolver.html#aa12860cbb3e8a34f71a071f6a1c44910", null ],
     [ "myMasks", "classDGtal_1_1DigitalSurfaceConvolver.html#a87f5a57e918237292c0304319e63dd5b", null ],
     [ "nbMoments", "classDGtal_1_1DigitalSurfaceConvolver.html#a0a4e0f17159afe7c1d0546a014ea7d4c", null ]

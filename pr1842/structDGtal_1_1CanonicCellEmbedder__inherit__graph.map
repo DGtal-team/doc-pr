@@ -1,0 +1,9 @@
+<map id="DGtal::CanonicCellEmbedder&lt; TKSpace &gt;" name="DGtal::CanonicCellEmbedder&lt; TKSpace &gt;">
+<area shape="rect" id="Node000001" title="Aim: A trivial embedder for signed and unsigned cell, which corresponds to the canonic injection of c..." alt="" coords="5,69,216,109"/>
+<area shape="rect" id="Node000002" href="$structDGtal_1_1CanonicCellEmbedder.html" title=" " alt="" coords="477,5,688,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,68,240,67,477,35,477,41,240,72,230,74"/>
+<area shape="rect" id="Node000003" href="$structDGtal_1_1CanonicCellEmbedder.html" title=" " alt="" coords="471,69,695,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,87,471,87,471,92,230,92"/>
+<area shape="rect" id="Node000004" href="$structDGtal_1_1CanonicCellEmbedder.html" title=" " alt="" coords="477,133,688,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="230,105,240,107,477,138,477,143,240,112,229,110"/>
+</map>

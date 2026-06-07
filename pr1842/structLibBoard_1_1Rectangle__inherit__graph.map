@@ -1,0 +1,9 @@
+<map id="LibBoard::Rectangle" name="LibBoard::Rectangle">
+<area shape="rect" id="Node000001" title="A rectangle." alt="" coords="5,152,157,177"/>
+<area shape="rect" id="Node000004" href="$structLibBoard_1_1Image.html" title="Used to draw image in figure." alt="" coords="17,225,145,251"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="84,191,84,225,79,225,79,191"/>
+<area shape="rect" id="Node000002" href="$structLibBoard_1_1Polyline.html" title="A polygonal line described by a series of 2D points." alt="" coords="12,79,151,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,118,84,152,79,152,79,118"/>
+<area shape="rect" id="Node000003" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape." alt="" coords="18,5,145,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="84,44,84,79,79,79,79,44"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$structLibBoard_1_1Transform.html" title="base class for transforms." alt="" coords="5,80,157,105"/>
+<area shape="rect" id="Node000001" href="$structLibBoard_1_1TransformCairo.html" title="Structure representing a scaling and translation suitable for an Cairo output." alt="" coords="205,5,392,31"/>
+<area shape="poly" id="edge312_Node000000_Node000001" title=" " alt="" coords="122,72,204,39,243,28,244,33,206,45,124,77"/>
+<area shape="rect" id="Node000002" href="$structLibBoard_1_1TransformEPS.html" title="Structure representing a scaling and translation suitable for an EPS output." alt="" coords="211,55,387,80"/>
+<area shape="poly" id="edge313_Node000000_Node000002" title=" " alt="" coords="171,80,210,75,211,80,171,85"/>
+<area shape="rect" id="Node000003" href="$structLibBoard_1_1TransformFIG.html" title="Structure representing a scaling and translation suitable for an XFig output." alt="" coords="211,104,386,129"/>
+<area shape="poly" id="edge314_Node000000_Node000003" title=" " alt="" coords="172,100,212,104,211,110,171,105"/>
+<area shape="rect" id="Node000004" href="$structLibBoard_1_1TransformSVG.html" title="Structure representing a scaling and translation suitable for an SVG output." alt="" coords="209,153,388,179"/>
+<area shape="poly" id="edge315_Node000000_Node000004" title=" " alt="" coords="127,108,206,138,248,151,247,156,204,143,125,113"/>
+<area shape="rect" id="Node000005" href="$structLibBoard_1_1TransformTikZ.html" title="Structure representing a scaling and translation suitable for an TikZ output." alt="" coords="440,153,621,179"/>
+<area shape="poly" id="edge316_Node000004_Node000005" title=" " alt="" coords="402,163,440,163,440,169,402,169"/>
+</map>

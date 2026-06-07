@@ -1,0 +1,9 @@
+<map id="DGtal::concepts::CSegmentComputerEstimator&lt; T &gt;" name="DGtal::concepts::CSegmentComputerEstimator&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Aim: This concept is a refinement of CCurveLocalGeometricEstimator devoted to the estimation of a geo..." alt="" coords="276,63,476,103"/>
+<area shape="rect" id="Node000002" href="$structDGtal_1_1concepts_1_1CCurveLocalGeometricEstimator.html" title="Aim: This concept describes an object that can process a range so as to return one estimated quantity..." alt="" coords="9,5,224,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,46,286,60,284,65,220,51"/>
+<area shape="rect" id="Node000003" href="$structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html." alt="" coords="5,70,228,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,80,276,80,276,85,242,85"/>
+<area shape="rect" id="Node000004" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="29,119,204,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="197,114,275,99,276,104,198,119"/>
+</map>

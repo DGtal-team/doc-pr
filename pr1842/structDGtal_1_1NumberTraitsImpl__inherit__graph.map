@@ -1,0 +1,17 @@
+<map id="DGtal::NumberTraitsImpl&lt; T, Enable &gt;" name="DGtal::NumberTraitsImpl&lt; T, Enable &gt;">
+<area shape="rect" id="Node000001" title="Aim: The traits class for all models of Cinteger (implementation)" alt="" coords="5,109,188,149"/>
+<area shape="rect" id="Node000002" href="$structDGtal_1_1NumberTraits.html" title=" " alt="" coords="965,5,1120,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,99,167,73,211,52,250,44,307,37,465,29,852,21,965,21,965,27,852,27,465,34,307,43,250,49,213,57,170,78,133,103"/>
+<area shape="rect" id="Node000003" href="$structDGtal_1_1NumberTraits.html" title=" " alt="" coords="965,81,1120,121"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,124,965,101,965,106,201,129"/>
+<area shape="rect" id="Node000004" href="$structDGtal_1_1NumberTraitsImpl.html" title=" " alt="" coords="392,52,587,92"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="201,110,212,108,391,82,392,88,212,113,202,115"/>
+<area shape="rect" id="Node000006" href="$structDGtal_1_1NumberTraitsImpl.html" title=" " alt="" coords="398,167,581,222"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="150,152,213,175,307,189,398,194,397,199,307,195,211,180,148,157"/>
+<area shape="rect" id="Node000007" href="$structDGtal_1_1NumberTraitsImpl.html" title=" " alt="" coords="398,246,581,301"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="125,158,164,196,188,214,213,228,259,246,306,258,398,270,398,275,305,263,257,251,211,233,185,218,160,200,121,161"/>
+<area shape="rect" id="Node000005" href="$structDGtal_1_1NumberTraits.html" title="Aim: The traits class for all models of Cinteger." alt="" coords="636,59,828,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="600,69,636,69,636,75,600,75"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="830,55,965,34,965,40,831,60"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="842,80,852,81,966,92,965,97,852,87,842,86"/>
+</map>

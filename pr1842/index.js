@@ -460,7 +460,8 @@ var index =
           ] ]
         ] ],
         [ "Example code", "moduleIntegralInvariant.html#II_sectImplementation", null ],
-        [ "Some results", "moduleIntegralInvariant.html#sectResults", null ]
+        [ "Some results", "moduleIntegralInvariant.html#sectResults", null ],
+        [ "Parallel Integral Invariant estimators", "moduleIntegralInvariant.html#II_sectParallel", null ]
       ] ],
       [ "Local digital surface estimators from surfel functors", "LocalEstimatorsFromSurfel.html", [
         [ "Introduction", "LocalEstimatorsFromSurfel.html#sectLocalEstimatorsFromSurfel1", null ],

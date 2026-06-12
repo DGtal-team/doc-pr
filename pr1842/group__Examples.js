@@ -63,6 +63,7 @@ var group__Examples =
     [ "greedy-plane-segmentation-ex2.cpp", "greedy-plane-segmentation-ex2_8cpp.html", null ],
     [ "greedy-plane-segmentation-ex3.cpp", "greedy-plane-segmentation-ex3_8cpp.html", null ],
     [ "greedy-plane-segmentation.cpp", "greedy-plane-segmentation_8cpp.html", null ],
+    [ "parallelIIShortcuts.cpp", "parallelIIShortcuts_8cpp.html", null ],
     [ "checkLatticeBallQuickHull.cpp", "checkLatticeBallQuickHull_8cpp.html", null ],
     [ "exampleInHalfPlane.cpp", "exampleInHalfPlane_8cpp.html", null ],
     [ "exampleAffineGeometry.cpp", "exampleAffineGeometry_8cpp.html", null ],

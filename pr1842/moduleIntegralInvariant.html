@@ -25,7 +25,7 @@ window.MathJax = {
   }
 };
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="MathJax-4.1.1/es5/tex-chtml.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="MathJax-3.2.2/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -112,9 +112,10 @@ $(document).ready(function(){initNavTree('moduleIntegralInvariant.html',''); ini
 </li>
 <li class="level1"><a href="#II_sectImplementation">Example code</a></li>
 <li class="level1"><a href="#sectResults">Some results</a></li>
+<li class="level1"><a href="#II_sectParallel">Parallel Integral Invariant estimators</a></li>
 </ul>
 </div>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Jérémy Levallois</dd></dl>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Jérémy Levallois, David Coeurjolly</dd></dl>
 <h1><a class="anchor" id="II_sectOverview"></a>
 Overview</h1>
 <p>The algorithm implemented in the class <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html" title="Aim: This class implement an Integral Invariant estimator which computes for each surfel the volume o...">IntegralInvariantVolumeEstimator</a> and <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html" title="Aim: This class implement an Integral Invariant estimator which computes for each surfel the covarian...">IntegralInvariantCovarianceEstimator</a> are detailed in the article <a class="el" href="citelist.html#CITEREF_Coeurjo-CVIU-2014">[29]</a> .</p>
@@ -252,14 +253,117 @@ Mean curvature mapped on a Stanford bunny (credit is given to the Stanford Compu
 <img src="Bunny_64_k1.png" alt=""/>
 <div class="caption">
 First principal curvature direction mapped on a Stanford bunny (credit is given to the Stanford Computer Graphics Laboratory https://graphics.stanford.edu/data/3Dscanrep/)</div></div>
- </div></div><!-- contents -->
+<h1><a class="anchor" id="II_sectParallel"></a>
+Parallel Integral Invariant estimators</h1>
+<p>Each Integral Invariant estimator can run in parallel in <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a>, provided the library is compiled with OpenMP support (<code>DGTAL_WITH_OPENMP</code> option). The interface for computation and parameter setting is the same as for every other integral invariant estimator and can be used as a drop-in replacement in most cases.</p>
+<p>The key idea behind the parallel execution is to first split the surface domain into subdomains, and then run convolutions concurrently on each of these smaller domains. The splitter type is still specified in the template parameters, while the configured splitter instance is now passed to the <code><a class="el" href="classDGtal_1_1ParallelIIEstimator.html" title="Run an Integral Invariant estimator in parallel.">ParallelIIEstimator</a></code> constructor together with the requested thread count. Currently, <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> provides <a class="el" href="structDGtal_1_1RegularDomainSplitter.html" title="Splits a domain evenly along all dimensions.">RegularDomainSplitter</a>, which splits the outer domain regularly, and <a class="el" href="structDGtal_1_1AxisDomainSplitter.html" title="Splits a domain along one of the domain grid axis.">AxisDomainSplitter</a>, which splits domains along a specified dimension. See <a class="el" href="DomainSplitter_8h_source.html">kernel/domains/DomainSplitter.h</a> for more information and the expected interface.</p>
+<p>At the low-level API, a typical construction is:</p>
+<div class="fragment"><div class="line">  MyIICurvatureEstimator  curvatureEstimator (    curvatureFunctor);</div>
+<div class="line">  curvatureEstimator.attach( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, dshape );</div>
+<div class="line">  curvatureEstimator.setParams( re/h );</div>
+<div class="line">  curvatureEstimator.init( h, ibegin, iend );</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">// Parallel version expects a domain splitter instance and a number of</span></div>
+<div class="line">  <span class="comment">// threads. Subsequent arguments are forwarded to the underlying estimator.</span></div>
+<div class="line">  Splitter <a class="code hl_variable" href="testDomainSplitter_8cpp.html#ab6b81a70ec4f1e24c100692ad95c69e9">splitter</a>;</div>
+<div class="line">  MyIICurvatureEstimatorP curvatureEstimatorP( <a class="code hl_variable" href="testDomainSplitter_8cpp.html#ab6b81a70ec4f1e24c100692ad95c69e9">splitter</a>, 4, curvatureFunctor );</div>
+<div class="line">  curvatureEstimatorP.attach( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, dshape );</div>
+<div class="line">  curvatureEstimatorP.setParams( re/h );</div>
+<div class="line">  curvatureEstimatorP.init( h, ibeginP, iendP );</div>
+<div class="ttc" id="atestCubicalComplex_8cpp_html_a2b87ed989d2519d025bd5d4fbcbac062"><div class="ttname"><a href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a></div><div class="ttdeci">KSpace K</div><div class="ttdef"><b>Definition</b> <a href="testCubicalComplex_8cpp_source.html#l00062">testCubicalComplex.cpp:62</a></div></div>
+<div class="ttc" id="atestDomainSplitter_8cpp_html_ab6b81a70ec4f1e24c100692ad95c69e9"><div class="ttname"><a href="testDomainSplitter_8cpp.html#ab6b81a70ec4f1e24c100692ad95c69e9">splitter</a></div><div class="ttdeci">AxisDomainSplitter&lt; Domain &gt; splitter</div><div class="ttdef"><b>Definition</b> <a href="testDomainSplitter_8cpp_source.html#l00108">testDomainSplitter.cpp:108</a></div></div>
+</div><!-- fragment --><p><a class="el" href="structA.html">A</a> complete example is detailed in <a class="el" href="parallelIIShortcuts_8cpp.html">parallelIIShortcuts.cpp</a> using the <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> <a class="el" href="classDGtal_1_1Shortcuts.html" title="Aim: This class is used to simplify shape and surface creation. With it, you can create new shapes an...">Shortcuts</a> (see <a class="el" href="moduleShortcuts.html">Shortcuts</a>). For example, using this setting:</p>
+<div class="fragment"><div class="line">    <span class="keyword">auto</span> params = SH3::defaultParameters() | SHG3::defaultParameters();</div>
+<div class="line">    params( <span class="stringliteral">&quot;polynomial&quot;</span>, <span class="stringliteral">&quot;goursat&quot;</span> )( <span class="stringliteral">&quot;gridstep&quot;</span>, 0.125 );</div>
+<div class="line">    <span class="keyword">auto</span> implicit_shape  = SH3::makeImplicitShape3D  ( params );</div>
+<div class="line">    <span class="keyword">auto</span> digitized_shape = SH3::makeDigitizedImplicitShape3D( implicit_shape, params );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>         = SH3::getKSpace( params );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>   = SH3::makeDigitalSurface( digitized_shape, <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    <span class="keyword">auto</span> surfels   = SH3::getSurfelRange( <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, params );</div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a74206273d94e57c9b5aa280170896031"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a></div><div class="ttdeci">CountedPtr&lt; SH3::DigitalSurface &gt; surface</div><div class="ttdef"><b>Definition</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00066">dgtalCalculus-geodesic.cpp:66</a></div></div>
+</div><!-- fragment --><p>Parallel Integral Invariant curvature estimation can be obtained using:</p>
+<div class="fragment"><div class="line">    <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#a9b36f5ab76b1945c8156cb4dba780bfb">info</a>()&lt;&lt; <span class="stringliteral">&quot;Input vol domain: &quot;</span>&lt;&lt; digitized_shape-&gt;getDomain() &lt;&lt; std::endl;</div>
+<div class="line">    <span class="comment">//Sequential</span></div>
+<div class="line">    <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;Single thread&quot;</span>);</div>
+<div class="line">    <span class="keyword">auto</span> curv      = SHG3::getIIMeanCurvatures( digitized_shape, surfels, params );</div>
+<div class="line">    <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">//Parallel</span></div>
+<div class="line">    <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;4 threads on default axis&quot;</span>);</div>
+<div class="line">    <span class="keyword">auto</span> curv_par4  = SHG3::getIIMeanCurvatures( digitized_shape, surfels,</div>
+<div class="line">                                                params( <span class="stringliteral">&quot;ii-thread-number&quot;</span>, 4 ));</div>
+<div class="line">    <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">//Parallel</span></div>
+<div class="line">    <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;8 threads on axis 0&quot;</span>);</div>
+<div class="line">    <span class="keyword">auto</span> curv_par80 = SHG3::getIIMeanCurvatures( digitized_shape, surfels,</div>
+<div class="line">                                                params( <span class="stringliteral">&quot;ii-thread-number&quot;</span>, 8 )</div>
+<div class="line">                                                ( <span class="stringliteral">&quot;ii-split-axis&quot;</span>, 0 ) );</div>
+<div class="line">    <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">//Parallel</span></div>
+<div class="line">    <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;8 threads on axis 1&quot;</span>);</div>
+<div class="line">    <span class="keyword">auto</span> curv_par81  = SHG3::getIIMeanCurvatures( digitized_shape, surfels,</div>
+<div class="line">                                                params( <span class="stringliteral">&quot;ii-thread-number&quot;</span>, 8 )</div>
+<div class="line">                                                ( <span class="stringliteral">&quot;ii-split-axis&quot;</span>, 1 ) );</div>
+<div class="line">    <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">//Parallel</span></div>
+<div class="line">    <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;8 threads on axis 2&quot;</span>);</div>
+<div class="line">    <span class="keyword">auto</span> curv_par82  = SHG3::getIIMeanCurvatures( digitized_shape, surfels,</div>
+<div class="line">                                                params( <span class="stringliteral">&quot;ii-thread-number&quot;</span>, 8 )</div>
+<div class="line">                                                ( <span class="stringliteral">&quot;ii-split-axis&quot;</span>, 2 ) );</div>
+<div class="line">    <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">//Parallel</span></div>
+<div class="line">    <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;16 threads on axis 2&quot;</span>);</div>
+<div class="line">    <span class="keyword">auto</span> curv_par16  = SHG3::getIIMeanCurvatures( digitized_shape, surfels,</div>
+<div class="line">                                                 params( <span class="stringliteral">&quot;ii-thread-number&quot;</span>, 16 )</div>
+<div class="line">                                                 ( <span class="stringliteral">&quot;ii-split-axis&quot;</span>, 2 ) );</div>
+<div class="line">    <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
+<div class="ttc" id="aclassDGtal_1_1Trace_html_a352b7160bf722e2f0bcbee5d0bad6ef3"><div class="ttname"><a href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">DGtal::Trace::beginBlock</a></div><div class="ttdeci">void beginBlock(const std::string &amp;keyword=&quot;&quot;)</div></div>
+<div class="ttc" id="aclassDGtal_1_1Trace_html_a9b36f5ab76b1945c8156cb4dba780bfb"><div class="ttname"><a href="classDGtal_1_1Trace.html#a9b36f5ab76b1945c8156cb4dba780bfb">DGtal::Trace::info</a></div><div class="ttdeci">std::ostream &amp; info()</div></div>
+<div class="ttc" id="aclassDGtal_1_1Trace_html_afa3a2874289734884107b1ce68ccb93d"><div class="ttname"><a href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock</a></div><div class="ttdeci">double endBlock()</div></div>
+<div class="ttc" id="anamespaceDGtal_html_a8fc7012708b0416880a5c8b12dfdf9dd"><div class="ttname"><a href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">DGtal::trace</a></div><div class="ttdeci">Trace trace</div></div>
+</div><!-- fragment --><p>On an Apple M1 (8 cores), the output shows a speed-up up to 8 threads as expected: </p><div class="fragment"><div class="line">Input vol <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>: [HyperRectDomain] = [(-85, -85, -85)]x[(85, 85, 85)]</div>
+<div class="line">New Block [Single thread]</div>
+<div class="line">  - II mean curvature alpha=0.33</div>
+<div class="line">  - II mean curvature r=1.51043 (continuous) 12.0835 (discrete)</div>
+<div class="line">EndBlock [Single thread] (25956.2 ms)</div>
+<div class="line">New Block [4 threads on <span class="keywordflow">default</span> axis]</div>
+<div class="line">  - II mean curvature alpha=0.33</div>
+<div class="line">  - II mean curvature r=1.51043 (continuous) 12.0835 (discrete)</div>
+<div class="line">  - II mean curvature uses ParallelIIEstimator with thread request=4 and split axis=0</div>
+<div class="line">EndBlock [4 threads on <span class="keywordflow">default</span> axis] (8295.22 ms)</div>
+<div class="line">New Block [8 threads on axis 0]</div>
+<div class="line">  - II mean curvature alpha=0.33</div>
+<div class="line">  - II mean curvature r=1.51043 (continuous) 12.0835 (discrete)</div>
+<div class="line">  - II mean curvature uses ParallelIIEstimator with thread request=8 and split axis=0</div>
+<div class="line">EndBlock [8 threads on axis 0] (7084.68 ms)</div>
+<div class="line">New Block [8 threads on axis 1]</div>
+<div class="line">  - II mean curvature alpha=0.33</div>
+<div class="line">  - II mean curvature r=1.51043 (continuous) 12.0835 (discrete)</div>
+<div class="line">  - II mean curvature uses ParallelIIEstimator with thread request=8 and split axis=1</div>
+<div class="line">EndBlock [8 threads on axis 1] (6740.38 ms)</div>
+<div class="line">New Block [8 threads on axis 2]</div>
+<div class="line">  - II mean curvature alpha=0.33</div>
+<div class="line">  - II mean curvature r=1.51043 (continuous) 12.0835 (discrete)</div>
+<div class="line">  - II mean curvature uses ParallelIIEstimator with thread request=8 and split axis=2</div>
+<div class="line">EndBlock [8 threads on axis 2] (4311.78 ms)</div>
+<div class="line">New Block [16 threads on axis 2]</div>
+<div class="line">  - II mean curvature alpha=0.33</div>
+<div class="line">  - II mean curvature r=1.51043 (continuous) 12.0835 (discrete)</div>
+<div class="line">  - II mean curvature uses ParallelIIEstimator with thread request=16 and split axis=2</div>
+<div class="line">EndBlock [16 threads on axis 2] (4717 ms)</div>
+<div class="ttc" id="atestProjection_8cpp_html_a1f1a69f8d8b037b72c2160ed12b3ef51"><div class="ttname"><a href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a></div><div class="ttdeci">Domain domain</div><div class="ttdef"><b>Definition</b> <a href="testProjection_8cpp_source.html#l00088">testProjection.cpp:88</a></div></div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
-    <li class="footer">Generated on Sun Jun 7 2026 12:38:39 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Jun 12 2026 10:45:38 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

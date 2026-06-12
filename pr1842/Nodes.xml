@@ -1994,6 +1994,11 @@
               <Path>moduleIntegralInvariant.html</Path>
               <Anchor>sectResults</Anchor>
              </Node>
+             <Node>
+              <Name>Parallel Integral Invariant estimators</Name>
+              <Path>moduleIntegralInvariant.html</Path>
+              <Anchor>II_sectParallel</Anchor>
+             </Node>
             </Subnodes>
            </Node>
            <Node>
@@ -11420,6 +11425,10 @@
            <Node>
             <Name>greedy-plane-segmentation.cpp</Name>
             <Path>greedy-plane-segmentation_8cpp.html</Path>
+           </Node>
+           <Node>
+            <Name>parallelIIShortcuts.cpp</Name>
+            <Path>parallelIIShortcuts_8cpp.html</Path>
            </Node>
            <Node>
             <Name>checkLatticeBallQuickHull.cpp</Name>
@@ -34293,9 +34302,19 @@
               <Path>structDGtal_1_1AxisDomainSplitter.html</Path>
             <Subnodes>
                <Node>
+                <Name>Dimension</Name>
+                <Path>structDGtal_1_1AxisDomainSplitter.html</Path>
+                <Anchor>aeb3bdd7196ab77037f3d1f261eb1bb05</Anchor>
+               </Node>
+               <Node>
                 <Name>SplitDomainsInfo</Name>
                 <Path>structDGtal_1_1AxisDomainSplitter.html</Path>
                 <Anchor>ad4734ff7d2b59a5af4f1dae983c94939</Anchor>
+               </Node>
+               <Node>
+                <Name>AxisDomainSplitter</Name>
+                <Path>structDGtal_1_1AxisDomainSplitter.html</Path>
+                <Anchor>a386c3b029ba36a7fc9e4390a411e4836</Anchor>
                </Node>
                <Node>
                 <Name>BOOST_CONCEPT_ASSERT</Name>
@@ -34305,7 +34324,17 @@
                <Node>
                 <Name>operator()</Name>
                 <Path>structDGtal_1_1AxisDomainSplitter.html</Path>
-                <Anchor>acd7aab12cb11ddbe4f0b984f5f8e3e88</Anchor>
+                <Anchor>af7ccdcf0ce84d84e3539d765f45101ce</Anchor>
+               </Node>
+               <Node>
+                <Name>operator()</Name>
+                <Path>structDGtal_1_1AxisDomainSplitter.html</Path>
+                <Anchor>acc09875ee70f2fc6aad2b040619b9ad4</Anchor>
+               </Node>
+               <Node>
+                <Name>axis</Name>
+                <Path>structDGtal_1_1AxisDomainSplitter.html</Path>
+                <Anchor>a9507843b498eecd253e91ab341f3d320</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -82887,7 +82916,7 @@
                <Node>
                 <Name>ParallelIIEstimator</Name>
                 <Path>classDGtal_1_1ParallelIIEstimator.html</Path>
-                <Anchor>a5a4a6bf081a3ddc9465da94b96f53f1b</Anchor>
+                <Anchor>a8bebebafc96d3b60e9bf754ca633d419</Anchor>
                </Node>
                <Node>
                 <Name>attach</Name>
@@ -92214,6 +92243,11 @@
                 <Anchor>abb44bb9b2965f44428c8da06ea72e45b</Anchor>
                </Node>
                <Node>
+                <Name>getIICurvatureEstimation</Name>
+                <Path>classDGtal_1_1ShortcutsGeometry.html</Path>
+                <Anchor>ad90140ed428d35a58aca81996a195d4d</Anchor>
+               </Node>
+               <Node>
                 <Name>getIIGaussianCurvatures</Name>
                 <Path>classDGtal_1_1ShortcutsGeometry.html</Path>
                 <Anchor>ae1cda6ee99aec8ab1239ef9033cc5735</Anchor>
@@ -92257,6 +92291,11 @@
                 <Name>getIINormalVectors</Name>
                 <Path>classDGtal_1_1ShortcutsGeometry.html</Path>
                 <Anchor>a0844a430b63210b05a3335041f7cc632</Anchor>
+               </Node>
+               <Node>
+                <Name>getIIParallelSplitAxis</Name>
+                <Path>classDGtal_1_1ShortcutsGeometry.html</Path>
+                <Anchor>a84d824f837cbf07c2a8f7a7b1bd929d6</Anchor>
                </Node>
                <Node>
                 <Name>getIIPrincipalCurvaturesAndDirections</Name>
@@ -107848,24 +107887,9 @@
               <Anchor>a1a947e0fd6d7a3027446645ba2e61fa3</Anchor>
              </Node>
              <Node>
-              <Name>AxisDomainSplitter</Name>
-              <Path>namespaceDGtal.html</Path>
-              <Anchor>a6ba3831be34e75e1bfaad7769cfbff7d</Anchor>
-             </Node>
-             <Node>
               <Name>BIG_DS</Name>
               <Path>namespaceDGtal.html</Path>
               <Anchor>a0ccba88e9fe5ad2a06d331549330f73f</Anchor>
-             </Node>
-             <Node>
-              <Name>Currently</Name>
-              <Path>namespaceDGtal.html</Path>
-              <Anchor>af91b2dd9c42375a924cf599ff192b654</Anchor>
-             </Node>
-             <Node>
-              <Name>DGtal</Name>
-              <Path>namespaceDGtal.html</Path>
-              <Anchor>ab9f673b63373714634ddeab2ba1abc46</Anchor>
              </Node>
              <Node>
               <Name>HALF_EDGE_INVALID_INDEX</Name>
@@ -107943,24 +107967,9 @@
               <Anchor>a65709bfffcb44e2be49f4f3bcdae96cd</Anchor>
              </Node>
              <Node>
-              <Name>RegularDomainSplitter</Name>
-              <Path>namespaceDGtal.html</Path>
-              <Anchor>a4d4b45c434ab69674b709f8da1082ec7</Anchor>
-             </Node>
-             <Node>
-              <Name>regularly</Name>
-              <Path>namespaceDGtal.html</Path>
-              <Anchor>a5460f10e96900e3972410f461e2fb549</Anchor>
-             </Node>
-             <Node>
               <Name>SMALL_DS</Name>
               <Path>namespaceDGtal.html</Path>
               <Anchor>a0b0d54e9b61da5d9b64f280338444398</Anchor>
-             </Node>
-             <Node>
-              <Name>subdomains</Name>
-              <Path>namespaceDGtal.html</Path>
-              <Anchor>a74fdd7c164faf00ab2fa244d6d7ae45d</Anchor>
              </Node>
              <Node>
               <Name>trace</Name>
@@ -132349,9 +132358,19 @@
               <Path>structDGtal_1_1AxisDomainSplitter.html</Path>
             <Subnodes>
                <Node>
+                <Name>Dimension</Name>
+                <Path>structDGtal_1_1AxisDomainSplitter.html</Path>
+                <Anchor>aeb3bdd7196ab77037f3d1f261eb1bb05</Anchor>
+               </Node>
+               <Node>
                 <Name>SplitDomainsInfo</Name>
                 <Path>structDGtal_1_1AxisDomainSplitter.html</Path>
                 <Anchor>ad4734ff7d2b59a5af4f1dae983c94939</Anchor>
+               </Node>
+               <Node>
+                <Name>AxisDomainSplitter</Name>
+                <Path>structDGtal_1_1AxisDomainSplitter.html</Path>
+                <Anchor>a386c3b029ba36a7fc9e4390a411e4836</Anchor>
                </Node>
                <Node>
                 <Name>BOOST_CONCEPT_ASSERT</Name>
@@ -132361,7 +132380,17 @@
                <Node>
                 <Name>operator()</Name>
                 <Path>structDGtal_1_1AxisDomainSplitter.html</Path>
-                <Anchor>acd7aab12cb11ddbe4f0b984f5f8e3e88</Anchor>
+                <Anchor>af7ccdcf0ce84d84e3539d765f45101ce</Anchor>
+               </Node>
+               <Node>
+                <Name>operator()</Name>
+                <Path>structDGtal_1_1AxisDomainSplitter.html</Path>
+                <Anchor>acc09875ee70f2fc6aad2b040619b9ad4</Anchor>
+               </Node>
+               <Node>
+                <Name>axis</Name>
+                <Path>structDGtal_1_1AxisDomainSplitter.html</Path>
+                <Anchor>a9507843b498eecd253e91ab341f3d320</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -180943,7 +180972,7 @@
                <Node>
                 <Name>ParallelIIEstimator</Name>
                 <Path>classDGtal_1_1ParallelIIEstimator.html</Path>
-                <Anchor>a5a4a6bf081a3ddc9465da94b96f53f1b</Anchor>
+                <Anchor>a8bebebafc96d3b60e9bf754ca633d419</Anchor>
                </Node>
                <Node>
                 <Name>attach</Name>
@@ -190270,6 +190299,11 @@
                 <Anchor>abb44bb9b2965f44428c8da06ea72e45b</Anchor>
                </Node>
                <Node>
+                <Name>getIICurvatureEstimation</Name>
+                <Path>classDGtal_1_1ShortcutsGeometry.html</Path>
+                <Anchor>ad90140ed428d35a58aca81996a195d4d</Anchor>
+               </Node>
+               <Node>
                 <Name>getIIGaussianCurvatures</Name>
                 <Path>classDGtal_1_1ShortcutsGeometry.html</Path>
                 <Anchor>ae1cda6ee99aec8ab1239ef9033cc5735</Anchor>
@@ -190313,6 +190347,11 @@
                 <Name>getIINormalVectors</Name>
                 <Path>classDGtal_1_1ShortcutsGeometry.html</Path>
                 <Anchor>a0844a430b63210b05a3335041f7cc632</Anchor>
+               </Node>
+               <Node>
+                <Name>getIIParallelSplitAxis</Name>
+                <Path>classDGtal_1_1ShortcutsGeometry.html</Path>
+                <Anchor>a84d824f837cbf07c2a8f7a7b1bd929d6</Anchor>
                </Node>
                <Node>
                 <Name>getIIPrincipalCurvaturesAndDirections</Name>

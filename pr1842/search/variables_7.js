@@ -13,7 +13,7 @@ var searchData=
   ['gradshadehot_10',['gradShadeHot',['http://dgtal.org/doc/tools/nightly/structMainWindow_1_1ColorMapFunctor.html#a0487a8607c573043a31eba5c2c440345',1,'MainWindow::ColorMapFunctor']]],
   ['graph_5fvertex_5findex_11',['graph_vertex_index',['../structmy__vertex__copier.html#abc07d553b9a269316a60d22f08bec65a',1,'my_vertex_copier']]],
   ['graph_5fvertex_5fposition_12',['graph_vertex_position',['../structmy__vertex__copier.html#a9f4e8d3eeda5ee24cfe90f0f24d51097',1,'my_vertex_copier']]],
-  ['gray_13',['gray',['../classtestRigidTransformation2D.html#aeb3499da1ca219eeaf0a1039c34fe981',1,'testRigidTransformation2D::gray'],['../classDGtal_1_1Color.html#adc0c09055f0e8817e1f2ede5abefcc0f',1,'DGtal::Color::Gray']]],
+  ['gray_13',['gray',['../classDGtal_1_1Color.html#adc0c09055f0e8817e1f2ede5abefcc0f',1,'DGtal::Color::Gray'],['../classtestRigidTransformation2D.html#aeb3499da1ca219eeaf0a1039c34fe981',1,'testRigidTransformation2D::gray']]],
   ['green_14',['Green',['../classDGtal_1_1Color.html#ae52413c37b58ca78ac99f05f67c1be99',1,'DGtal::Color']]],
   ['grid_15',['Grid',['http://dgtal.org/doc/tools/nightly/classViewer3DImage.html#af9bed53f696cbc99071f09a4c895a575ac58ddf71ebc780a014d8f7d9bdadfe97',1,'Viewer3DImage']]],
   ['group_16',['group',['../exampleGenericLatticeConvexHull4D_8cpp.html#a594922f4ad3ee8ebb2656211ca7e0d1f',1,'exampleGenericLatticeConvexHull4D.cpp']]]

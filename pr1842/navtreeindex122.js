@@ -1,5 +1,13 @@
 var NAVTREEINDEX122 =
 {
+"structDGtal_1_1CorrectedNormalCurrentFormula.html#a4682b7e9f140144191cb92234ae423aa":[4,0,2,119,21],
+"structDGtal_1_1CorrectedNormalCurrentFormula.html#a4767514685c4b4923d0d61c094ae8395":[4,0,2,119,17],
+"structDGtal_1_1CorrectedNormalCurrentFormula.html#a4767514685c4b4923d0d61c094ae8395":[3,0,2,125,17],
+"structDGtal_1_1CorrectedNormalCurrentFormula.html#a4abe96fe97784e96c1fccf5252913d32":[4,0,2,119,14],
+"structDGtal_1_1CorrectedNormalCurrentFormula.html#a4abe96fe97784e96c1fccf5252913d32":[3,0,2,125,14],
+"structDGtal_1_1CorrectedNormalCurrentFormula.html#a4c0fb4b8f54ee87c9049d1473ad1b693":[4,0,2,119,18],
+"structDGtal_1_1CorrectedNormalCurrentFormula.html#a4c0fb4b8f54ee87c9049d1473ad1b693":[3,0,2,125,18],
+"structDGtal_1_1CorrectedNormalCurrentFormula.html#a55b4b9cc4156c0ef995ada4d11b97d4b":[4,0,2,119,8],
 "structDGtal_1_1CorrectedNormalCurrentFormula.html#a55b4b9cc4156c0ef995ada4d11b97d4b":[3,0,2,125,8],
 "structDGtal_1_1CorrectedNormalCurrentFormula.html#a57a2b76f14a3fef4760dae2225734819":[3,0,2,125,27],
 "structDGtal_1_1CorrectedNormalCurrentFormula.html#a57a2b76f14a3fef4760dae2225734819":[4,0,2,119,27],
@@ -241,13 +249,5 @@ var NAVTREEINDEX122 =
 "structDGtal_1_1DelaunayIntegralKernel.html#a4495ba366de050ee69b67e23d80f9a57":[4,0,2,139,2],
 "structDGtal_1_1DelaunayIntegralKernel.html#a46afb48002f08d7969ba3b4d06437d84":[4,0,2,139,6],
 "structDGtal_1_1DelaunayIntegralKernel.html#a46afb48002f08d7969ba3b4d06437d84":[3,0,2,145,6],
-"structDGtal_1_1DelaunayIntegralKernel.html#a4cb6fde474fde9e70aea2f709fa0e006":[3,0,2,145,0],
-"structDGtal_1_1DelaunayIntegralKernel.html#a4cb6fde474fde9e70aea2f709fa0e006":[4,0,2,139,0],
-"structDGtal_1_1DelaunayIntegralKernel.html#a6ae173c1e2f5cf631094a3b206c8b68b":[3,0,2,145,20],
-"structDGtal_1_1DelaunayIntegralKernel.html#a6ae173c1e2f5cf631094a3b206c8b68b":[4,0,2,139,20],
-"structDGtal_1_1DelaunayIntegralKernel.html#a7428f62505071244945636a3827becf6":[3,0,2,145,7],
-"structDGtal_1_1DelaunayIntegralKernel.html#a7428f62505071244945636a3827becf6":[4,0,2,139,7],
-"structDGtal_1_1DelaunayIntegralKernel.html#a776ac07a9c82eca28e8fbd543af16b75":[4,0,2,139,18],
-"structDGtal_1_1DelaunayIntegralKernel.html#a776ac07a9c82eca28e8fbd543af16b75":[3,0,2,145,18],
-"structDGtal_1_1DelaunayIntegralKernel.html#a80f5cfa2b0ae3c1372375d93663b44ad":[4,0,2,139,12]
+"structDGtal_1_1DelaunayIntegralKernel.html#a4cb6fde474fde9e70aea2f709fa0e006":[3,0,2,145,0]
 };

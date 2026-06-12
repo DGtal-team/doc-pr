@@ -25,7 +25,7 @@ window.MathJax = {
   }
 };
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="MathJax-4.1.1/es5/tex-chtml.js"></script>
+<script type="text/javascript" id="MathJax-script" async="async" src="MathJax-3.2.2/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -212,46 +212,94 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   68</span>  params(<span class="stringliteral">&quot;r-radius&quot;</span>, 3.0);</div>
 <div class="line"><span class="lineno">   69</span> </div>
 <div class="line"><span class="lineno">   70</span>  <span class="comment">//We compute the curvature tensor, the mean and the Gaussian curvature</span></div>
-<div class="line"><span class="lineno">   71</span>  <span class="keyword">auto</span> Tcurv     = SHG3::getIIPrincipalCurvaturesAndDirections(<a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, surfels, params);</div>
-<div class="line"><span class="lineno">   72</span>  <span class="keyword">auto</span> Kcurv     = SHG3::getIIGaussianCurvatures( <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, surfels, params);</div>
-<div class="line"><span class="lineno">   73</span> </div>
-<div class="line"><span class="lineno">   74</span>  std::vector&lt;double&gt; k1,k2,G;</div>
-<div class="line"><span class="lineno">   75</span>  <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp;result: Tcurv)</div>
-<div class="line"><span class="lineno">   76</span>  {</div>
-<div class="line"><span class="lineno">   77</span>    k1.push_back( std::get&lt;0&gt;(result) );</div>
-<div class="line"><span class="lineno">   78</span>    k2.push_back( std::get&lt;1&gt;(result) );</div>
-<div class="line"><span class="lineno">   79</span>    G.push_back( ( std::get&lt;0&gt;(result) * std::get&lt;1&gt;(result)) );</div>
-<div class="line"><span class="lineno">   80</span>  }</div>
-<div class="line"><span class="lineno">   81</span> </div>
-<div class="line"><span class="lineno">   82</span>  <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9d67e4c9f9fd0cbd27970d9c2719b15a">SECTION</a>(<span class="stringliteral">&quot;Testing that mean/Gaussian/tensor curvature shortucut values match&quot;</span>)</div>
-<div class="line"><span class="lineno">   83</span>  {</div>
-<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; G.size(); ++i)</div>
-<div class="line"><span class="lineno">   85</span>      <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( Kcurv[i] == Approx( G[i] ) );</div>
-<div class="line"><span class="lineno">   86</span>  }</div>
-<div class="line"><span class="lineno">   87</span> </div>
-<div class="line"><span class="lineno">   88</span>  <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9d67e4c9f9fd0cbd27970d9c2719b15a">SECTION</a>(<span class="stringliteral">&quot;Testing on shifted domains&quot;</span>)</div>
-<div class="line"><span class="lineno">   89</span>  {</div>
-<div class="line"><span class="lineno">   90</span>    <span class="keyword">auto</span> SHIFT=512;</div>
-<div class="line"><span class="lineno">   91</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a> = <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>-&gt;domain();</div>
-<div class="line"><span class="lineno">   92</span>    <a class="code hl_class" href="classDGtal_1_1HyperRectDomain.html">Z3i::Domain</a> shifted(<a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#a44a001d5cbc66a2be1c4e9347a32f3eb">lowerBound</a>() + <a class="code hl_function" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">Z3i::Point::diagonal</a>(SHIFT), <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#a70e0fd9f1b3c021e4028591fa93797d2">upperBound</a>() + <a class="code hl_function" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">Z3i::Point::diagonal</a>(SHIFT) );</div>
-<div class="line"><span class="lineno">   93</span> </div>
-<div class="line"><span class="lineno">   94</span>    SH3::KSpace Ks;</div>
-<div class="line"><span class="lineno">   95</span>    Ks.init( shifted.lowerBound(), shifted.upperBound(), <span class="keyword">true</span> );</div>
+<div class="line"><span class="lineno">   71</span>  <span class="keyword">auto</span> Hcurv     = SHG3::getIIMeanCurvatures( <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, surfels, params );</div>
+<div class="line"><span class="lineno">   72</span>  <span class="keyword">auto</span> Tcurv     = SHG3::getIIPrincipalCurvaturesAndDirections(<a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, surfels, params);</div>
+<div class="line"><span class="lineno">   73</span>  <span class="keyword">auto</span> Kcurv     = SHG3::getIIGaussianCurvatures( <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, surfels, params);</div>
+<div class="line"><span class="lineno">   74</span>  <span class="keyword">auto</span> Ncurv     = SHG3::getIINormalVectors( <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, surfels, params );</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>  <span class="keyword">auto</span> params_parallel = params;</div>
+<div class="line"><span class="lineno">   77</span>  params_parallel( <span class="stringliteral">&quot;ii-thread-number&quot;</span>, 4 )( <span class="stringliteral">&quot;ii-split-axis&quot;</span>, 2 );</div>
+<div class="line"><span class="lineno">   78</span>  <span class="keyword">auto</span> HcurvParallel = SHG3::getIIMeanCurvatures( <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, surfels, params_parallel );</div>
+<div class="line"><span class="lineno">   79</span>  <span class="keyword">auto</span> TcurvParallel = SHG3::getIIPrincipalCurvaturesAndDirections( <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, surfels, params_parallel );</div>
+<div class="line"><span class="lineno">   80</span>  <span class="keyword">auto</span> KcurvParallel = SHG3::getIIGaussianCurvatures( <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, surfels, params_parallel );</div>
+<div class="line"><span class="lineno">   81</span>  <span class="keyword">auto</span> NcurvParallel = SHG3::getIINormalVectors( <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, surfels, params_parallel );</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>  std::vector&lt;double&gt; k1,k2,G;</div>
+<div class="line"><span class="lineno">   84</span>  <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp;result: Tcurv)</div>
+<div class="line"><span class="lineno">   85</span>  {</div>
+<div class="line"><span class="lineno">   86</span>    k1.push_back( std::get&lt;0&gt;(result) );</div>
+<div class="line"><span class="lineno">   87</span>    k2.push_back( std::get&lt;1&gt;(result) );</div>
+<div class="line"><span class="lineno">   88</span>    G.push_back( ( std::get&lt;0&gt;(result) * std::get&lt;1&gt;(result)) );</div>
+<div class="line"><span class="lineno">   89</span>  }</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>  <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9d67e4c9f9fd0cbd27970d9c2719b15a">SECTION</a>(<span class="stringliteral">&quot;Testing that mean/Gaussian/tensor curvature shortucut values match&quot;</span>)</div>
+<div class="line"><span class="lineno">   92</span>  {</div>
+<div class="line"><span class="lineno">   93</span>    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; G.size(); ++i)</div>
+<div class="line"><span class="lineno">   94</span>      <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( Kcurv[i] == Approx( G[i] ) );</div>
+<div class="line"><span class="lineno">   95</span>  }</div>
 <div class="line"><span class="lineno">   96</span> </div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_class" href="classDGtal_1_1CountedPtr.html">CountedPtr&lt;SH3::BinaryImage&gt;</a>  binary_image_shifted(<span class="keyword">new</span> SH3::BinaryImage(shifted));</div>
-<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> p : <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>-&gt;<a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>())</div>
-<div class="line"><span class="lineno">   99</span>      binary_image_shifted-&gt;setValue(p+Z3i::<a class="code hl_class" href="classMyPointD.html">Point</a>::<a class="code hl_functionRef" href="http://dgtal.org/doc/tools/nightly/namespaceDGtal_1_1functions_1_1dec.html#ad9fb26d47ad401b3c03352935a26d653">diagonal</a>(SHIFT), <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>-&gt;operator()(p));</div>
-<div class="line"><span class="lineno">  100</span> </div>
-<div class="line"><span class="lineno">  101</span>    <span class="keyword">auto</span> surfaceShifted  = SH3::makeLightDigitalSurface( binary_image_shifted, Ks, params );</div>
-<div class="line"><span class="lineno">  102</span>    <span class="keyword">auto</span> surfelsShifted  = SH3::getSurfelRange( surfaceShifted, params );</div>
-<div class="line"><span class="lineno">  103</span>    <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#a9b36f5ab76b1945c8156cb4dba780bfb">info</a>() &lt;&lt; <span class="stringliteral">&quot;Nb surfels= &quot;</span> &lt;&lt; surfels.size() &lt;&lt; <span class="stringliteral">&quot; &quot;</span>&lt;&lt;shifted&lt;&lt;<span class="stringliteral">&quot; &quot;</span>&lt;&lt;Ks&lt;&lt;std::endl;</div>
-<div class="line"><span class="lineno">  104</span> </div>
-<div class="line"><span class="lineno">  105</span>    <span class="comment">//Computing some differential quantities</span></div>
-<div class="line"><span class="lineno">  106</span>    <span class="keyword">auto</span> KcurvShifted     = SHG3::getIIGaussianCurvatures( binary_image_shifted, surfelsShifted, params);</div>
-<div class="line"><span class="lineno">  107</span> </div>
+<div class="line"><span class="lineno">   97</span>  <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9d67e4c9f9fd0cbd27970d9c2719b15a">SECTION</a>(<span class="stringliteral">&quot;Testing that requesting the parallel II shortcut preserves curvature values&quot;</span>)</div>
+<div class="line"><span class="lineno">   98</span>  {</div>
+<div class="line"><span class="lineno">   99</span>    <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( HcurvParallel.size() == Hcurv.size() );</div>
+<div class="line"><span class="lineno">  100</span>    <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( KcurvParallel.size() == Kcurv.size() );</div>
+<div class="line"><span class="lineno">  101</span>    <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( TcurvParallel.size() == Tcurv.size() );</div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>    <span class="keywordflow">for</span> ( std::size_t i = 0; i &lt; Hcurv.size(); ++i )</div>
+<div class="line"><span class="lineno">  104</span>      <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( HcurvParallel[ i ] == Approx( Hcurv[ i ] ) );</div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>    <span class="keywordflow">for</span> ( std::size_t i = 0; i &lt; Kcurv.size(); ++i )</div>
+<div class="line"><span class="lineno">  107</span>      <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( KcurvParallel[ i ] == Approx( Kcurv[ i ] ) );</div>
 <div class="line"><span class="lineno">  108</span> </div>
-<div class="line"><span class="lineno">  109</span>  }</div>
-<div class="line"><span class="lineno">  110</span>}</div>
+<div class="line"><span class="lineno">  109</span>    <span class="keywordflow">for</span> ( std::size_t i = 0; i &lt; Tcurv.size(); ++i )</div>
+<div class="line"><span class="lineno">  110</span>    {</div>
+<div class="line"><span class="lineno">  111</span>      <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::get&lt;0&gt;( TcurvParallel[ i ] ) == Approx( std::get&lt;0&gt;( Tcurv[ i ] ) ) );</div>
+<div class="line"><span class="lineno">  112</span>      <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::get&lt;1&gt;( TcurvParallel[ i ] ) == Approx( std::get&lt;1&gt;( Tcurv[ i ] ) ) );</div>
+<div class="line"><span class="lineno">  113</span>    }</div>
+<div class="line"><span class="lineno">  114</span>  }</div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>  <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9d67e4c9f9fd0cbd27970d9c2719b15a">SECTION</a>(<span class="stringliteral">&quot;Testing that requesting the parallel II shortcut preserves normal vectors&quot;</span>)</div>
+<div class="line"><span class="lineno">  117</span>  {</div>
+<div class="line"><span class="lineno">  118</span>    <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( NcurvParallel.size() == Ncurv.size() );</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">for</span> ( std::size_t i = 0; i &lt; Ncurv.size(); ++i )</div>
+<div class="line"><span class="lineno">  121</span>      <span class="keywordflow">for</span> ( std::size_t d = 0; d &lt; 3; ++d )</div>
+<div class="line"><span class="lineno">  122</span>        <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( NcurvParallel[ i ][ d ] == Approx( Ncurv[ i ][ d ] ) );</div>
+<div class="line"><span class="lineno">  123</span>  }</div>
+<div class="line"><span class="lineno">  124</span> </div>
+<div class="line"><span class="lineno">  125</span>  <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9d67e4c9f9fd0cbd27970d9c2719b15a">SECTION</a>(<span class="stringliteral">&quot;Testing that ii-split-axis accepts out-of-range values by clamping to a valid axis&quot;</span>)</div>
+<div class="line"><span class="lineno">  126</span>  {</div>
+<div class="line"><span class="lineno">  127</span>    <span class="keyword">auto</span> params_parallel_clamped = params;</div>
+<div class="line"><span class="lineno">  128</span>    params_parallel_clamped( <span class="stringliteral">&quot;ii-thread-number&quot;</span>, 4 )( <span class="stringliteral">&quot;ii-split-axis&quot;</span>, 9 );</div>
+<div class="line"><span class="lineno">  129</span>    <span class="keyword">auto</span> HcurvParallelClamped = SHG3::getIIMeanCurvatures( <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, surfels, params_parallel_clamped );</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span>    <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( HcurvParallelClamped.size() == Hcurv.size() );</div>
+<div class="line"><span class="lineno">  132</span>    <span class="keywordflow">for</span> ( std::size_t i = 0; i &lt; Hcurv.size(); ++i )</div>
+<div class="line"><span class="lineno">  133</span>      <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( HcurvParallelClamped[ i ] == Approx( Hcurv[ i ] ) );</div>
+<div class="line"><span class="lineno">  134</span>  }</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>  <a class="code hl_function" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9d67e4c9f9fd0cbd27970d9c2719b15a">SECTION</a>(<span class="stringliteral">&quot;Testing on shifted domains&quot;</span>)</div>
+<div class="line"><span class="lineno">  137</span>  {</div>
+<div class="line"><span class="lineno">  138</span>    <span class="keyword">auto</span> SHIFT=512;</div>
+<div class="line"><span class="lineno">  139</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a> = <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>-&gt;domain();</div>
+<div class="line"><span class="lineno">  140</span>    <a class="code hl_class" href="classDGtal_1_1HyperRectDomain.html">Z3i::Domain</a> shifted(<a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#a44a001d5cbc66a2be1c4e9347a32f3eb">lowerBound</a>() + <a class="code hl_function" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">Z3i::Point::diagonal</a>(SHIFT), <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#a70e0fd9f1b3c021e4028591fa93797d2">upperBound</a>() + <a class="code hl_function" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">Z3i::Point::diagonal</a>(SHIFT) );</div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>    SH3::KSpace Ks;</div>
+<div class="line"><span class="lineno">  143</span>    Ks.init( shifted.lowerBound(), shifted.upperBound(), <span class="keyword">true</span> );</div>
+<div class="line"><span class="lineno">  144</span> </div>
+<div class="line"><span class="lineno">  145</span>    <a class="code hl_class" href="classDGtal_1_1CountedPtr.html">CountedPtr&lt;SH3::BinaryImage&gt;</a>  binary_image_shifted(<span class="keyword">new</span> SH3::BinaryImage(shifted));</div>
+<div class="line"><span class="lineno">  146</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> p : <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>-&gt;<a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>())</div>
+<div class="line"><span class="lineno">  147</span>      binary_image_shifted-&gt;setValue(p+Z3i::<a class="code hl_class" href="classMyPointD.html">Point</a>::<a class="code hl_functionRef" href="http://dgtal.org/doc/tools/nightly/namespaceDGtal_1_1functions_1_1dec.html#ad9fb26d47ad401b3c03352935a26d653">diagonal</a>(SHIFT), <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>-&gt;operator()(p));</div>
+<div class="line"><span class="lineno">  148</span> </div>
+<div class="line"><span class="lineno">  149</span>    <span class="keyword">auto</span> surfaceShifted  = SH3::makeLightDigitalSurface( binary_image_shifted, Ks, params );</div>
+<div class="line"><span class="lineno">  150</span>    <span class="keyword">auto</span> surfelsShifted  = SH3::getSurfelRange( surfaceShifted, params );</div>
+<div class="line"><span class="lineno">  151</span>    <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#a9b36f5ab76b1945c8156cb4dba780bfb">info</a>() &lt;&lt; <span class="stringliteral">&quot;Nb surfels= &quot;</span> &lt;&lt; surfels.size() &lt;&lt; <span class="stringliteral">&quot; &quot;</span>&lt;&lt;shifted&lt;&lt;<span class="stringliteral">&quot; &quot;</span>&lt;&lt;Ks&lt;&lt;std::endl;</div>
+<div class="line"><span class="lineno">  152</span> </div>
+<div class="line"><span class="lineno">  153</span>    <span class="comment">//Computing some differential quantities</span></div>
+<div class="line"><span class="lineno">  154</span>    <span class="keyword">auto</span> KcurvShifted     = SHG3::getIIGaussianCurvatures( binary_image_shifted, surfelsShifted, params);</div>
+<div class="line"><span class="lineno">  155</span> </div>
+<div class="line"><span class="lineno">  156</span> </div>
+<div class="line"><span class="lineno">  157</span>  }</div>
+<div class="line"><span class="lineno">  158</span>}</div>
 <div class="ttc" id="aclassDGtal_1_1CountedPtr_html"><div class="ttname"><a href="classDGtal_1_1CountedPtr.html">DGtal::CountedPtr</a></div><div class="ttdoc">Aim: Smart pointer based on reference counts.</div><div class="ttdef"><b>Definition</b> <a href="CountedPtr_8h_source.html#l00079">CountedPtr.h:80</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1HyperRectDomain_html"><div class="ttname"><a href="classDGtal_1_1HyperRectDomain.html">DGtal::HyperRectDomain&lt; Space &gt;</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1HyperRectDomain_html_a44a001d5cbc66a2be1c4e9347a32f3eb"><div class="ttname"><a href="classDGtal_1_1HyperRectDomain.html#a44a001d5cbc66a2be1c4e9347a32f3eb">DGtal::HyperRectDomain::lowerBound</a></div><div class="ttdeci">const Point &amp; lowerBound() const</div></div>
@@ -278,7 +326,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_2751d6f01b35f5fec7131f6adf42b522.html">geometry</a></li><li class="navelem"><a class="el" href="dir_e226bbce94b418b2b8019d48fb57e0e0.html">surfaces</a></li><li class="navelem"><a class="el" href="testIntegralInvariantShortcuts_8cpp.html">testIntegralInvariantShortcuts.cpp</a></li>
-    <li class="footer">Generated on Sun Jun 7 2026 12:38:37 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Jun 12 2026 10:45:36 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

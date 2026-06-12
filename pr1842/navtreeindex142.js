@@ -1,5 +1,13 @@
 var NAVTREEINDEX142 =
 {
+"structDGtal_1_1concepts_1_1CPowerMetric.html#a19ae03a329cdf15369789f246dad1f91":[2,0,47,1],
+"structDGtal_1_1concepts_1_1CPowerMetric.html#a2298cf22faec2ddcd3998d199861e190":[2,0,47,6],
+"structDGtal_1_1concepts_1_1CPowerMetric.html#a2e2b9858fc82db0998dbc822979f5e1d":[2,0,47,0],
+"structDGtal_1_1concepts_1_1CPowerMetric.html#a3389edaba6556f6d1cbeb5547557bbb6":[2,0,47,7],
+"structDGtal_1_1concepts_1_1CPowerMetric.html#a44864c75cc0fd89dff9cb830cc6a9f59":[2,0,47,16],
+"structDGtal_1_1concepts_1_1CPowerMetric.html#a4876366648eabb4a9c77a296dd1b21b2":[2,0,47,2],
+"structDGtal_1_1concepts_1_1CPowerMetric.html#a62417e4379247794472e744b033ca9c9":[2,0,47,9],
+"structDGtal_1_1concepts_1_1CPowerMetric.html#a64c3c8072929e2ddd50bbe8b6899868e":[2,0,47,12],
 "structDGtal_1_1concepts_1_1CPowerMetric.html#a66e53edfa2b6497817a32f055149dab1":[2,0,47,8],
 "structDGtal_1_1concepts_1_1CPowerMetric.html#a77fb287f24f495e9f29736463fe09670":[2,0,47,3],
 "structDGtal_1_1concepts_1_1CPowerMetric.html#a95de6a1528b9d6f8ad0bcdbfad68e622":[2,0,47,11],
@@ -241,13 +249,5 @@ var NAVTREEINDEX142 =
 "structDGtal_1_1concepts_1_1CTrivialConstImage.html#a5d996dbfdd6305f6f3e2dd1cb7e15a2d":[2,0,60,3],
 "structDGtal_1_1concepts_1_1CTrivialConstImage.html#a7045e4c64d893525feda31fe5132c74b":[2,0,60,2],
 "structDGtal_1_1concepts_1_1CTrivialConstImage.html#ad5da09ef5a6cd8f21e6d2e91b0fbe17c":[2,0,60,4],
-"structDGtal_1_1concepts_1_1CTrivialConstImage.html#adc56d4f4841f252b427e19b36a12a830":[2,0,60,5],
-"structDGtal_1_1concepts_1_1CTrivialConstImage.html#af3b5f6e621c9a0dbafd1393b1fd4699c":[2,0,60,1],
-"structDGtal_1_1concepts_1_1CTrivialImage.html":[2,0,61],
-"structDGtal_1_1concepts_1_1CTrivialImage.html#a5f8f509a304bda7a76a73a9aad59ea10":[2,0,61,0],
-"structDGtal_1_1concepts_1_1CTrivialImage.html#a76842f0864f2d511623b1c402d993430":[2,0,61,3],
-"structDGtal_1_1concepts_1_1CTrivialImage.html#a7b2266b6bad77d4f6fd42e71677db731":[2,0,61,1],
-"structDGtal_1_1concepts_1_1CTrivialImage.html#a979f52bf7ef8625fee0f60436bffbbe6":[2,0,61,2],
-"structDGtal_1_1concepts_1_1CUnaryFunctor.html":[2,0,19],
-"structDGtal_1_1concepts_1_1CUnaryFunctor.html#a0b852e4312e2ab27f1ea974a1b0b55b8":[2,0,19,0]
+"structDGtal_1_1concepts_1_1CTrivialConstImage.html#adc56d4f4841f252b427e19b36a12a830":[2,0,60,5]
 };

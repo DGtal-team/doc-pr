@@ -1,5 +1,13 @@
 var NAVTREEINDEX123 =
 {
+"structDGtal_1_1DelaunayIntegralKernel.html#a4cb6fde474fde9e70aea2f709fa0e006":[4,0,2,139,0],
+"structDGtal_1_1DelaunayIntegralKernel.html#a6ae173c1e2f5cf631094a3b206c8b68b":[3,0,2,145,20],
+"structDGtal_1_1DelaunayIntegralKernel.html#a6ae173c1e2f5cf631094a3b206c8b68b":[4,0,2,139,20],
+"structDGtal_1_1DelaunayIntegralKernel.html#a7428f62505071244945636a3827becf6":[3,0,2,145,7],
+"structDGtal_1_1DelaunayIntegralKernel.html#a7428f62505071244945636a3827becf6":[4,0,2,139,7],
+"structDGtal_1_1DelaunayIntegralKernel.html#a776ac07a9c82eca28e8fbd543af16b75":[4,0,2,139,18],
+"structDGtal_1_1DelaunayIntegralKernel.html#a776ac07a9c82eca28e8fbd543af16b75":[3,0,2,145,18],
+"structDGtal_1_1DelaunayIntegralKernel.html#a80f5cfa2b0ae3c1372375d93663b44ad":[4,0,2,139,12],
 "structDGtal_1_1DelaunayIntegralKernel.html#a80f5cfa2b0ae3c1372375d93663b44ad":[3,0,2,145,12],
 "structDGtal_1_1DelaunayIntegralKernel.html#a822bab0b88b4044aefc8ab1900e298da":[4,0,2,139,11],
 "structDGtal_1_1DelaunayIntegralKernel.html#a822bab0b88b4044aefc8ab1900e298da":[3,0,2,145,11],
@@ -241,13 +249,5 @@ var NAVTREEINDEX123 =
 "structDGtal_1_1DigitalSurface_1_1SurfelMap.html":[3,0,2,163,3],
 "structDGtal_1_1DigitalSurface_1_1SurfelMap.html#a7b6e23422cca181ebcba301df59f9e06":[4,0,2,157,3,0],
 "structDGtal_1_1DigitalSurface_1_1SurfelMap.html#a7b6e23422cca181ebcba301df59f9e06":[3,0,2,163,3,0],
-"structDGtal_1_1DigitalSurface_1_1VertexMap.html":[3,0,2,163,4],
-"structDGtal_1_1DigitalSurface_1_1VertexMap.html":[4,0,2,157,4],
-"structDGtal_1_1DigitalSurface_1_1VertexMap.html#add6288293f6ea8296f7667c3ca7867dc":[3,0,2,163,4,0],
-"structDGtal_1_1DigitalSurface_1_1VertexMap.html#add6288293f6ea8296f7667c3ca7867dc":[4,0,2,157,4,0],
-"structDGtal_1_1DigitalTopologyTraits.html":[4,0,2,167],
-"structDGtal_1_1DigitalTopologyTraits.html":[3,0,2,173],
-"structDGtal_1_1DigitalTopologyTraits.html#a53ff2fbab866cf36e433853e1790473a":[4,0,2,167,0],
-"structDGtal_1_1DigitalTopologyTraits.html#a53ff2fbab866cf36e433853e1790473a":[3,0,2,173,0],
-"structDGtal_1_1DigitalTopologyTraits_3_01MetricAdjacency_3_01TSpace_00_011_01_4_00_01MetricAdjac06cfee9ede448beddab595341bf8da45.html":[4,0,2,168]
+"structDGtal_1_1DigitalSurface_1_1VertexMap.html":[3,0,2,163,4]
 };

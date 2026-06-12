@@ -1,6 +1,5 @@
 var NAVTREEINDEX114 =
 {
-"namespaceDGtal_1_1concepts_1_1ConceptUtils.html#a7cc7b2b2393623d84b58bf9e5d79ef38":[3,0,2,0,0,9],
 "namespaceDGtal_1_1concepts_1_1ConceptUtils.html#ada4223f57cd8768b8c2db3de4a26c4e3":[3,0,2,0,0,12],
 "namespaceDGtal_1_1concepts_1_1ConceptUtils.html#ae5eda4fcd7f26921b9335b5c7d5874e1":[3,0,2,0,0,17],
 "namespaceDGtal_1_1concepts_1_1ConceptUtils.html#af339bf2d282962efad1dc8103079b922":[3,0,2,0,0,13],
@@ -249,5 +248,6 @@ var NAVTREEINDEX114 =
 "namespaceLibBoard_1_1Fonts.html#aa625464f813a8ce483957dd5cbdce3a3a928b45abd6c58949e109c4e4aebfb4f1":[3,0,3,0,0,23],
 "namespaceLibBoard_1_1Fonts.html#aa625464f813a8ce483957dd5cbdce3a3a97741f6bbc7406a16a2f451b775a90c0":[3,0,3,0,0,18],
 "namespaceLibBoard_1_1Fonts.html#aa625464f813a8ce483957dd5cbdce3a3a9ae3ec0178abb9c0b4c6fe51876af210":[3,0,3,0,0,34],
-"namespaceLibBoard_1_1Fonts.html#aa625464f813a8ce483957dd5cbdce3a3aa4c4efbcf79d03f94772f876fb595392":[3,0,3,0,0,11]
+"namespaceLibBoard_1_1Fonts.html#aa625464f813a8ce483957dd5cbdce3a3aa4c4efbcf79d03f94772f876fb595392":[3,0,3,0,0,11],
+"namespaceLibBoard_1_1Fonts.html#aa625464f813a8ce483957dd5cbdce3a3aa911b772f521481da7aa40cc1efa2076":[3,0,3,0,0,4]
 };

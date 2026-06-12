@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['h_0',['h',['../structDGtal_1_1QuickHull_1_1Facet.html#a994ce4d78ae16117d3e66bdc51b315ad',1,'DGtal::QuickHull::Facet::H'],['../structOptions.html#ad345c740ff94c483319d90c65010e335',1,'Options::h']]],
+  ['h_0',['h',['../structOptions.html#ad345c740ff94c483319d90c65010e335',1,'Options::h'],['../structDGtal_1_1QuickHull_1_1Facet.html#a994ce4d78ae16117d3e66bdc51b315ad',1,'DGtal::QuickHull::Facet::H']]],
   ['half_5fedge_5finvalid_5findex_1',['HALF_EDGE_INVALID_INDEX',['../namespaceDGtal.html#a5fd8233d566e467056fa785b63463416',1,'DGtal']]],
   ['has_5fface_5fgeometry_2',['has_face_geometry',['../structDGtal_1_1ConvexCellComplex.html#a66f89f78d9e5d5f306eae444269f7c2b',1,'DGtal::ConvexCellComplex']]],
   ['heat_3',['heat',['../dgtalCalculus-geodesic_8cpp.html#af181e5dea5a5305e8a829f489f0265d7',1,'heat:&#160;dgtalCalculus-geodesic.cpp'],['../dgtalCalculus-halfsphere_8cpp.html#af181e5dea5a5305e8a829f489f0265d7',1,'heat:&#160;dgtalCalculus-halfsphere.cpp']]],

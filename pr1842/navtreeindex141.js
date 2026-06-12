@@ -1,5 +1,13 @@
 var NAVTREEINDEX141 =
 {
+"structDGtal_1_1concepts_1_1CGlobalGeometricEstimator.html#a8e1fafbcd8c5f077b02b51fad9b6afe6":[2,0,29,3],
+"structDGtal_1_1concepts_1_1CGlobalGeometricEstimator.html#a917235e12a223536a68bae65ba9ec103":[2,0,29,0],
+"structDGtal_1_1concepts_1_1CGlobalGeometricEstimator.html#aa00219379b4f3b587a67b0f7e359fc8c":[2,0,29,9],
+"structDGtal_1_1concepts_1_1CGlobalGeometricEstimator.html#aa5cae5e9dbd36934ad1e75f47b4f6e3a":[2,0,29,4],
+"structDGtal_1_1concepts_1_1CGlobalGeometricEstimator.html#ad2d81a9a365f47e623592baa2e650ffb":[2,0,29,6],
+"structDGtal_1_1concepts_1_1CGlobalGeometricEstimator.html#adf68d627a3f2654db532c1408bb79ac6":[2,0,29,1],
+"structDGtal_1_1concepts_1_1CGraphVisitor.html":[2,0,50],
+"structDGtal_1_1concepts_1_1CGraphVisitor.html#a05a02e0d4f8f07e4bea8c29214e0c4d2":[2,0,50,20],
 "structDGtal_1_1concepts_1_1CGraphVisitor.html#a0f8bac7a24292d285de4bbb2060d4b1c":[2,0,50,21],
 "structDGtal_1_1concepts_1_1CGraphVisitor.html#a456ddaa7b8f573cd8964623300f5caf3":[2,0,50,22],
 "structDGtal_1_1concepts_1_1CGraphVisitor.html#a5a8d74c09c1489ad4e02616cf2c7c958":[2,0,50,8],
@@ -241,13 +249,5 @@ var NAVTREEINDEX141 =
 "structDGtal_1_1concepts_1_1CPositiveIrreducibleFraction.html#afc1cc32b1f3ded65d8bd9a100cbf24b6":[2,0,0,9],
 "structDGtal_1_1concepts_1_1CPowerMetric.html":[2,0,47],
 "structDGtal_1_1concepts_1_1CPowerMetric.html#a09003d8a6159d61b7572dd813b44b579":[2,0,47,15],
-"structDGtal_1_1concepts_1_1CPowerMetric.html#a15b34a663d5bf592f13bbeaa6a96f688":[2,0,47,10],
-"structDGtal_1_1concepts_1_1CPowerMetric.html#a19ae03a329cdf15369789f246dad1f91":[2,0,47,1],
-"structDGtal_1_1concepts_1_1CPowerMetric.html#a2298cf22faec2ddcd3998d199861e190":[2,0,47,6],
-"structDGtal_1_1concepts_1_1CPowerMetric.html#a2e2b9858fc82db0998dbc822979f5e1d":[2,0,47,0],
-"structDGtal_1_1concepts_1_1CPowerMetric.html#a3389edaba6556f6d1cbeb5547557bbb6":[2,0,47,7],
-"structDGtal_1_1concepts_1_1CPowerMetric.html#a44864c75cc0fd89dff9cb830cc6a9f59":[2,0,47,16],
-"structDGtal_1_1concepts_1_1CPowerMetric.html#a4876366648eabb4a9c77a296dd1b21b2":[2,0,47,2],
-"structDGtal_1_1concepts_1_1CPowerMetric.html#a62417e4379247794472e744b033ca9c9":[2,0,47,9],
-"structDGtal_1_1concepts_1_1CPowerMetric.html#a64c3c8072929e2ddd50bbe8b6899868e":[2,0,47,12]
+"structDGtal_1_1concepts_1_1CPowerMetric.html#a15b34a663d5bf592f13bbeaa6a96f688":[2,0,47,10]
 };

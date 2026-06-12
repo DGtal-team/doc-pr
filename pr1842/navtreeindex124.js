@@ -1,5 +1,13 @@
 var NAVTREEINDEX124 =
 {
+"structDGtal_1_1DigitalSurface_1_1VertexMap.html":[4,0,2,157,4],
+"structDGtal_1_1DigitalSurface_1_1VertexMap.html#add6288293f6ea8296f7667c3ca7867dc":[3,0,2,163,4,0],
+"structDGtal_1_1DigitalSurface_1_1VertexMap.html#add6288293f6ea8296f7667c3ca7867dc":[4,0,2,157,4,0],
+"structDGtal_1_1DigitalTopologyTraits.html":[4,0,2,167],
+"structDGtal_1_1DigitalTopologyTraits.html":[3,0,2,173],
+"structDGtal_1_1DigitalTopologyTraits.html#a53ff2fbab866cf36e433853e1790473a":[4,0,2,167,0],
+"structDGtal_1_1DigitalTopologyTraits.html#a53ff2fbab866cf36e433853e1790473a":[3,0,2,173,0],
+"structDGtal_1_1DigitalTopologyTraits_3_01MetricAdjacency_3_01TSpace_00_011_01_4_00_01MetricAdjac06cfee9ede448beddab595341bf8da45.html":[4,0,2,168],
 "structDGtal_1_1DigitalTopologyTraits_3_01MetricAdjacency_3_01TSpace_00_011_01_4_00_01MetricAdjac06cfee9ede448beddab595341bf8da45.html":[3,0,2,174],
 "structDGtal_1_1DigitalTopologyTraits_3_01MetricAdjacency_3_01TSpace_00_011_01_4_00_01MetricAdjac06cfee9ede448beddab595341bf8da45.html#ad31321d102ae6de767d2f5a4472722c3":[3,0,2,174,0],
 "structDGtal_1_1DigitalTopologyTraits_3_01MetricAdjacency_3_01TSpace_00_011_01_4_00_01MetricAdjac06cfee9ede448beddab595341bf8da45.html#ad31321d102ae6de767d2f5a4472722c3":[4,0,2,168,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX124 =
 "structDGtal_1_1DrawWithBoardModifier.html":[3,0,2,194],
 "structDGtal_1_1DrawWithBoardModifier.html#a0af96bca1e3410a44515b8df9f79ff37":[3,0,2,194,0],
 "structDGtal_1_1DrawWithBoardModifier.html#a0af96bca1e3410a44515b8df9f79ff37":[4,0,2,188,0],
-"structDGtal_1_1DrawableWithBoard2D.html":[3,0,2,193],
-"structDGtal_1_1DrawableWithBoard2D.html":[4,0,2,187],
-"structDGtal_1_1DrawableWithBoard2D.html#abb9dc428f4ba6c355fdf2ad7fe5ff3f8":[3,0,2,193,1],
-"structDGtal_1_1DrawableWithBoard2D.html#abb9dc428f4ba6c355fdf2ad7fe5ff3f8":[4,0,2,187,1],
-"structDGtal_1_1DrawableWithBoard2D.html#af66d9ab3f476f5637b192dfae938fd6e":[3,0,2,193,0],
-"structDGtal_1_1DrawableWithBoard2D.html#af66d9ab3f476f5637b192dfae938fd6e":[4,0,2,187,0],
-"structDGtal_1_1DummyObject.html":[3,0,2,199],
-"structDGtal_1_1DummyObject.html":[4,0,2,193],
-"structDGtal_1_1DynamicBidirectionalSegmentComputer.html":[4,0,2,194]
+"structDGtal_1_1DrawableWithBoard2D.html":[3,0,2,193]
 };

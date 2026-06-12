@@ -14,7 +14,7 @@ var classDGtal_1_1ParallelIIEstimator =
     [ "SurfelSet", "classDGtal_1_1ParallelIIEstimator.html#a618ef1a8b1ca7bc4114521bdc168e38f", null ],
     [ "Visitor", "classDGtal_1_1ParallelIIEstimator.html#ad965518f3441af316b250a059a466990", null ],
     [ "VisitorRange", "classDGtal_1_1ParallelIIEstimator.html#af8f80da8b90605de03a3e7c0ddc8efcc", null ],
-    [ "ParallelIIEstimator", "classDGtal_1_1ParallelIIEstimator.html#a5a4a6bf081a3ddc9465da94b96f53f1b", null ],
+    [ "ParallelIIEstimator", "classDGtal_1_1ParallelIIEstimator.html#a8bebebafc96d3b60e9bf754ca633d419", null ],
     [ "attach", "classDGtal_1_1ParallelIIEstimator.html#a1ee8f2fc45a5fa53e360e87fd4522a78", null ],
     [ "clear", "classDGtal_1_1ParallelIIEstimator.html#a6aff3b63bd4fac9969ca8ea432ed673c", null ],
     [ "eval", "classDGtal_1_1ParallelIIEstimator.html#a9fb5b778e5a3f309282cb1d6da4cb81d", null ],
